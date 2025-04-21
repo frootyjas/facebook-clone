@@ -34,25 +34,27 @@
             emailInput = new TextBox();
             passwordPanel = new RoundedPanel();
             passwordInput = new TextBox();
-            createaccountBtn = new RoundedPanel();
+            createAccountBtn = new RoundedPanel();
             createaccountLabel = new Label();
             label1 = new Label();
-            groupBox1 = new GroupBox();
             linkLabel1 = new LinkLabel();
             LoginBtn = new RoundedPanel();
             loginLabel = new Label();
-            panel1 = new Panel();
+            loginPanel = new Panel();
             panel2 = new Panel();
             taglineLabel = new Label();
             pictureBox1 = new PictureBox();
+            createAccountPanel = new Panel();
+            alreadyHaveAccountLabel = new Label();
             roundedPanel1.SuspendLayout();
             emailPanel.SuspendLayout();
             passwordPanel.SuspendLayout();
-            createaccountBtn.SuspendLayout();
+            createAccountBtn.SuspendLayout();
             LoginBtn.SuspendLayout();
-            panel1.SuspendLayout();
+            loginPanel.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            createAccountPanel.SuspendLayout();
             SuspendLayout();
             // 
             // roundedPanel1
@@ -61,9 +63,8 @@
             roundedPanel1.BorderColor = Color.Gray;
             roundedPanel1.Controls.Add(emailPanel);
             roundedPanel1.Controls.Add(passwordPanel);
-            roundedPanel1.Controls.Add(createaccountBtn);
+            roundedPanel1.Controls.Add(createAccountBtn);
             roundedPanel1.Controls.Add(label1);
-            roundedPanel1.Controls.Add(groupBox1);
             roundedPanel1.Controls.Add(linkLabel1);
             roundedPanel1.Controls.Add(LoginBtn);
             roundedPanel1.Location = new Point(609, 35);
@@ -114,28 +115,28 @@
             passwordInput.Size = new Size(305, 20);
             passwordInput.TabIndex = 0;
             // 
-            // createaccountBtn
+            // createAccountBtn
             // 
-            createaccountBtn.BackColor = Color.FromArgb(153, 54, 164, 32);
-            createaccountBtn.BorderColor = Color.Gray;
-            createaccountBtn.Controls.Add(createaccountLabel);
-            createaccountBtn.CornerRadius = 8;
-            createaccountBtn.Location = new Point(70, 308);
-            createaccountBtn.Name = "createaccountBtn";
-            createaccountBtn.Size = new Size(227, 50);
-            createaccountBtn.TabIndex = 1;
+            createAccountBtn.BackColor = Color.FromArgb(153, 54, 164, 32);
+            createAccountBtn.BorderColor = Color.Gray;
+            createAccountBtn.Controls.Add(createaccountLabel);
+            createAccountBtn.CornerRadius = 8;
+            createAccountBtn.Location = new Point(70, 308);
+            createAccountBtn.Name = "createAccountBtn";
+            createAccountBtn.Size = new Size(227, 50);
+            createAccountBtn.TabIndex = 1;
             // 
             // createaccountLabel
             // 
-            createaccountLabel.AutoSize = true;
             createaccountLabel.BackColor = Color.Transparent;
             createaccountLabel.Font = new Font("FiraCode Nerd Font", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             createaccountLabel.ForeColor = Color.White;
-            createaccountLabel.Location = new Point(29, 16);
+            createaccountLabel.Location = new Point(0, 0);
             createaccountLabel.Name = "createaccountLabel";
-            createaccountLabel.Size = new Size(169, 16);
+            createaccountLabel.Size = new Size(224, 50);
             createaccountLabel.TabIndex = 0;
             createaccountLabel.Text = "Create new account";
+            createaccountLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -146,16 +147,6 @@
             label1.Size = new Size(315, 1);
             label1.TabIndex = 3;
             label1.Text = "label1";
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.Transparent;
-            groupBox1.ForeColor = Color.FromArgb(218, 221, 225);
-            groupBox1.Location = new Point(12, 282);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(340, 12);
-            groupBox1.TabIndex = 2;
-            groupBox1.TabStop = false;
             // 
             // linkLabel1
             // 
@@ -192,15 +183,15 @@
             loginLabel.TabIndex = 0;
             loginLabel.Text = "Log In";
             // 
-            // panel1
+            // loginPanel
             // 
-            panel1.Controls.Add(panel2);
-            panel1.Controls.Add(roundedPanel1);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1059, 495);
-            panel1.TabIndex = 1;
+            loginPanel.Controls.Add(panel2);
+            loginPanel.Controls.Add(roundedPanel1);
+            loginPanel.Dock = DockStyle.Fill;
+            loginPanel.Location = new Point(0, 0);
+            loginPanel.Name = "loginPanel";
+            loginPanel.Size = new Size(1059, 495);
+            loginPanel.TabIndex = 1;
             // 
             // panel2
             // 
@@ -233,13 +224,33 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // createAccountPanel
+            // 
+            createAccountPanel.Controls.Add(alreadyHaveAccountLabel);
+            createAccountPanel.Dock = DockStyle.Fill;
+            createAccountPanel.Location = new Point(0, 0);
+            createAccountPanel.Name = "createAccountPanel";
+            createAccountPanel.Size = new Size(1059, 495);
+            createAccountPanel.TabIndex = 4;
+            createAccountPanel.Paint += panel3_Paint;
+            // 
+            // alreadyHaveAccountLabel
+            // 
+            alreadyHaveAccountLabel.AutoSize = true;
+            alreadyHaveAccountLabel.Location = new Point(437, 254);
+            alreadyHaveAccountLabel.Name = "alreadyHaveAccountLabel";
+            alreadyHaveAccountLabel.Size = new Size(225, 19);
+            alreadyHaveAccountLabel.TabIndex = 0;
+            alreadyHaveAccountLabel.Text = "Already have an account?";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 244, 247);
             ClientSize = new Size(1059, 495);
-            Controls.Add(panel1);
+            Controls.Add(loginPanel);
+            Controls.Add(createAccountPanel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             Name = "Form1";
@@ -252,13 +263,14 @@
             emailPanel.PerformLayout();
             passwordPanel.ResumeLayout(false);
             passwordPanel.PerformLayout();
-            createaccountBtn.ResumeLayout(false);
-            createaccountBtn.PerformLayout();
+            createAccountBtn.ResumeLayout(false);
             LoginBtn.ResumeLayout(false);
             LoginBtn.PerformLayout();
-            panel1.ResumeLayout(false);
+            loginPanel.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            createAccountPanel.ResumeLayout(false);
+            createAccountPanel.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -267,18 +279,19 @@
         private RoundedPanel roundedPanel1;
         private RoundedPanel LoginBtn;
         private Label loginLabel;
-        private Panel panel1;
+        private Panel loginPanel;
         private Label taglineLabel;
         private PictureBox pictureBox1;
         private Panel panel2;
         private LinkLabel linkLabel1;
-        private GroupBox groupBox1;
         private Label label1;
-        private RoundedPanel createaccountBtn;
+        private RoundedPanel createAccountBtn;
         private Label createaccountLabel;
         private RoundedPanel passwordPanel;
         private TextBox passwordInput;
         private RoundedPanel emailPanel;
         private TextBox emailInput;
+        private Panel createAccountPanel;
+        private Label alreadyHaveAccountLabel;
     }
 }
