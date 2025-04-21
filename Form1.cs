@@ -11,13 +11,14 @@
             InitializeComponent();
 
             // Set initial panel visibility
-            loginPanel.Visible = true;
+            mainPanel.Visible = true;
             createAccountPanel.Visible = false;
+            forgotPasswordPanel.Visible = false;
 
             // Add click handlers
             createaccountLabel.Click += (s, e) =>
             {
-                loginPanel.Visible = false;
+                mainPanel.Visible = false;
                 createAccountPanel.Visible = true;
             };
 
@@ -25,8 +26,15 @@
             alreadyHaveAccountLabel.Click += (s, e) =>
             {
                 createAccountPanel.Visible = false;
-                loginPanel.Visible = true;
+                mainPanel.Visible = true;
             };
+
+            forgotPassword.Click += (s, e) =>
+            {
+                forgotPasswordPanel.Visible = true;
+                mainPanel.Visible = false;
+            };
+
 
             // Set hand cursor for the label
             alreadyHaveAccountLabel.Cursor = Cursors.Hand;
@@ -136,6 +144,11 @@
         }
 
         private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void roundedPanel17_Paint(object sender, PaintEventArgs e)
         {
 
         }
