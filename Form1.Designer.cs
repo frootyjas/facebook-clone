@@ -81,9 +81,19 @@
             label2 = new Label();
             pictureBox2 = new PictureBox();
             forgotPasswordPanel = new Panel();
-            roundedPanel14 = new RoundedPanel();
-            label11 = new Label();
             roundedPanel15 = new RoundedPanel();
+            cancelBtn = new RoundedPanel();
+            cancelLabel = new Label();
+            loginPanel = new Panel();
+            roundedPanel16 = new RoundedPanel();
+            signUpLabel = new LinkLabel();
+            roundedPanel17 = new RoundedPanel();
+            textBox7 = new TextBox();
+            roundedPanel18 = new RoundedPanel();
+            textBox8 = new TextBox();
+            forgotAccountLabel = new LinkLabel();
+            roundedPanel20 = new RoundedPanel();
+            label14 = new Label();
             roundedPanel1.SuspendLayout();
             emailPanel.SuspendLayout();
             passwordPanel.SuspendLayout();
@@ -107,8 +117,13 @@
             roundedPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             forgotPasswordPanel.SuspendLayout();
-            roundedPanel14.SuspendLayout();
             roundedPanel15.SuspendLayout();
+            cancelBtn.SuspendLayout();
+            loginPanel.SuspendLayout();
+            roundedPanel16.SuspendLayout();
+            roundedPanel17.SuspendLayout();
+            roundedPanel18.SuspendLayout();
+            roundedPanel20.SuspendLayout();
             SuspendLayout();
             // 
             // roundedPanel1
@@ -227,15 +242,15 @@
             // 
             // loginLabel
             // 
-            loginLabel.AutoSize = true;
             loginLabel.BackColor = Color.Transparent;
             loginLabel.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             loginLabel.ForeColor = Color.White;
-            loginLabel.Location = new Point(200, 15);
+            loginLabel.Location = new Point(3, 0);
             loginLabel.Name = "loginLabel";
-            loginLabel.Size = new Size(72, 25);
+            loginLabel.Size = new Size(461, 50);
             loginLabel.TabIndex = 0;
             loginLabel.Text = "Log In";
+            loginLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // mainPanel
             // 
@@ -701,38 +716,151 @@
             forgotPasswordPanel.Size = new Size(1483, 787);
             forgotPasswordPanel.TabIndex = 4;
             // 
-            // roundedPanel14
-            // 
-            roundedPanel14.BackColor = Color.FromArgb(228, 230, 235);
-            roundedPanel14.BorderColor = Color.Gray;
-            roundedPanel14.Controls.Add(label11);
-            roundedPanel14.CornerRadius = 8;
-            roundedPanel14.Location = new Point(77, 187);
-            roundedPanel14.Name = "roundedPanel14";
-            roundedPanel14.Size = new Size(137, 52);
-            roundedPanel14.TabIndex = 1;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.Transparent;
-            label11.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(75, 79, 86);
-            label11.Location = new Point(26, 13);
-            label11.Name = "label11";
-            label11.Size = new Size(80, 25);
-            label11.TabIndex = 0;
-            label11.Text = "Cancel";
-            // 
             // roundedPanel15
             // 
             roundedPanel15.BackColor = Color.White;
             roundedPanel15.BorderColor = Color.Gray;
-            roundedPanel15.Controls.Add(roundedPanel14);
+            roundedPanel15.Controls.Add(cancelBtn);
             roundedPanel15.Location = new Point(354, 304);
             roundedPanel15.Name = "roundedPanel15";
             roundedPanel15.Size = new Size(489, 252);
             roundedPanel15.TabIndex = 2;
+            // 
+            // cancelBtn
+            // 
+            cancelBtn.BackColor = Color.FromArgb(228, 230, 235);
+            cancelBtn.BorderColor = Color.Gray;
+            cancelBtn.Controls.Add(cancelLabel);
+            cancelBtn.CornerRadius = 8;
+            cancelBtn.Location = new Point(77, 189);
+            cancelBtn.Name = "cancelBtn";
+            cancelBtn.Size = new Size(128, 50);
+            cancelBtn.TabIndex = 1;
+            // 
+            // cancelLabel
+            // 
+            cancelLabel.BackColor = Color.Transparent;
+            cancelLabel.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cancelLabel.ForeColor = Color.FromArgb(75, 79, 86);
+            cancelLabel.Location = new Point(0, 0);
+            cancelLabel.Name = "cancelLabel";
+            cancelLabel.Size = new Size(128, 48);
+            cancelLabel.TabIndex = 0;
+            cancelLabel.Text = "Cancel";
+            cancelLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // loginPanel
+            // 
+            loginPanel.Controls.Add(roundedPanel16);
+            loginPanel.Dock = DockStyle.Fill;
+            loginPanel.Location = new Point(0, 0);
+            loginPanel.Name = "loginPanel";
+            loginPanel.Size = new Size(1483, 787);
+            loginPanel.TabIndex = 3;
+            // 
+            // roundedPanel16
+            // 
+            roundedPanel16.BackColor = Color.White;
+            roundedPanel16.BorderColor = Color.Gray;
+            roundedPanel16.Controls.Add(signUpLabel);
+            roundedPanel16.Controls.Add(roundedPanel17);
+            roundedPanel16.Controls.Add(roundedPanel18);
+            roundedPanel16.Controls.Add(forgotAccountLabel);
+            roundedPanel16.Controls.Add(roundedPanel20);
+            roundedPanel16.Location = new Point(431, 197);
+            roundedPanel16.Name = "roundedPanel16";
+            roundedPanel16.Size = new Size(490, 288);
+            roundedPanel16.TabIndex = 1;
+            // 
+            // signUpLabel
+            // 
+            signUpLabel.AutoSize = true;
+            signUpLabel.LinkBehavior = LinkBehavior.HoverUnderline;
+            signUpLabel.LinkColor = Color.FromArgb(23, 102, 255);
+            signUpLabel.Location = new Point(245, 235);
+            signUpLabel.Name = "signUpLabel";
+            signUpLabel.Size = new Size(189, 19);
+            signUpLabel.TabIndex = 5;
+            signUpLabel.TabStop = true;
+            signUpLabel.Text = "Sign up for Facebook";
+            // 
+            // roundedPanel17
+            // 
+            roundedPanel17.BackColor = Color.Transparent;
+            roundedPanel17.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel17.BorderThickness = 1;
+            roundedPanel17.Controls.Add(textBox7);
+            roundedPanel17.CornerRadius = 8;
+            roundedPanel17.Location = new Point(14, 18);
+            roundedPanel17.Name = "roundedPanel17";
+            roundedPanel17.Size = new Size(462, 60);
+            roundedPanel17.TabIndex = 4;
+            // 
+            // textBox7
+            // 
+            textBox7.BorderStyle = BorderStyle.None;
+            textBox7.Location = new Point(18, 19);
+            textBox7.Name = "textBox7";
+            textBox7.PlaceholderText = "Email or phone number";
+            textBox7.Size = new Size(305, 20);
+            textBox7.TabIndex = 0;
+            // 
+            // roundedPanel18
+            // 
+            roundedPanel18.BackColor = Color.Transparent;
+            roundedPanel18.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel18.BorderThickness = 1;
+            roundedPanel18.Controls.Add(textBox8);
+            roundedPanel18.CornerRadius = 8;
+            roundedPanel18.Location = new Point(12, 91);
+            roundedPanel18.Name = "roundedPanel18";
+            roundedPanel18.Size = new Size(464, 60);
+            roundedPanel18.TabIndex = 2;
+            // 
+            // textBox8
+            // 
+            textBox8.BorderStyle = BorderStyle.None;
+            textBox8.Location = new Point(18, 21);
+            textBox8.Name = "textBox8";
+            textBox8.PasswordChar = '●';
+            textBox8.PlaceholderText = "Password";
+            textBox8.Size = new Size(305, 20);
+            textBox8.TabIndex = 0;
+            // 
+            // forgotAccountLabel
+            // 
+            forgotAccountLabel.AutoSize = true;
+            forgotAccountLabel.LinkBehavior = LinkBehavior.HoverUnderline;
+            forgotAccountLabel.LinkColor = Color.FromArgb(23, 102, 255);
+            forgotAccountLabel.Location = new Point(57, 235);
+            forgotAccountLabel.Name = "forgotAccountLabel";
+            forgotAccountLabel.Size = new Size(144, 19);
+            forgotAccountLabel.TabIndex = 1;
+            forgotAccountLabel.TabStop = true;
+            forgotAccountLabel.Text = "Forgot Account?";
+            // 
+            // roundedPanel20
+            // 
+            roundedPanel20.BackColor = Color.FromArgb(153, 24, 119, 242);
+            roundedPanel20.BorderColor = Color.Gray;
+            roundedPanel20.Controls.Add(label14);
+            roundedPanel20.CornerRadius = 8;
+            roundedPanel20.Location = new Point(12, 166);
+            roundedPanel20.Name = "roundedPanel20";
+            roundedPanel20.Size = new Size(464, 50);
+            roundedPanel20.TabIndex = 0;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.White;
+            label14.Location = new Point(200, 15);
+            label14.Name = "label14";
+            label14.Size = new Size(72, 25);
+            label14.TabIndex = 0;
+            label14.Text = "Log In";
             // 
             // Form1
             // 
@@ -740,8 +868,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 244, 247);
             ClientSize = new Size(1483, 787);
-            Controls.Add(forgotPasswordPanel);
+            Controls.Add(loginPanel);
             Controls.Add(mainPanel);
+            Controls.Add(forgotPasswordPanel);
             Controls.Add(createAccountPanel);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
@@ -757,7 +886,6 @@
             passwordPanel.PerformLayout();
             createAccountBtn.ResumeLayout(false);
             LoginBtn.ResumeLayout(false);
-            LoginBtn.PerformLayout();
             mainPanel.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -785,9 +913,17 @@
             roundedPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             forgotPasswordPanel.ResumeLayout(false);
-            roundedPanel14.ResumeLayout(false);
-            roundedPanel14.PerformLayout();
             roundedPanel15.ResumeLayout(false);
+            cancelBtn.ResumeLayout(false);
+            loginPanel.ResumeLayout(false);
+            roundedPanel16.ResumeLayout(false);
+            roundedPanel16.PerformLayout();
+            roundedPanel17.ResumeLayout(false);
+            roundedPanel17.PerformLayout();
+            roundedPanel18.ResumeLayout(false);
+            roundedPanel18.PerformLayout();
+            roundedPanel20.ResumeLayout(false);
+            roundedPanel20.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -845,8 +981,18 @@
         private ComboBox comboBox3;
         private ComboBox comboBox1;
         private Panel forgotPasswordPanel;
-        private RoundedPanel roundedPanel14;
-        private Label label11;
+        private RoundedPanel cancelBtn;
+        private Label cancelLabel;
         private RoundedPanel roundedPanel15;
+        private Panel loginPanel;
+        private RoundedPanel roundedPanel16;
+        private RoundedPanel roundedPanel17;
+        private TextBox textBox7;
+        private RoundedPanel roundedPanel18;
+        private TextBox textBox8;
+        private LinkLabel forgotAccountLabel;
+        private RoundedPanel roundedPanel20;
+        private Label label14;
+        private LinkLabel signUpLabel;
     }
 }

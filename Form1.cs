@@ -14,6 +14,7 @@
             mainPanel.Visible = true;
             createAccountPanel.Visible = false;
             forgotPasswordPanel.Visible = false;
+            loginPanel.Visible = false;
 
             // Add click handlers
             createaccountLabel.Click += (s, e) =>
@@ -26,7 +27,7 @@
             alreadyHaveAccountLabel.Click += (s, e) =>
             {
                 createAccountPanel.Visible = false;
-                mainPanel.Visible = true;
+                loginPanel.Visible = true;
             };
 
             forgotPassword.Click += (s, e) =>
@@ -35,12 +36,32 @@
                 mainPanel.Visible = false;
             };
 
+            cancelLabel.Click += (s, e) =>
+            {
+                forgotPasswordPanel.Visible = false;
+                loginPanel.Visible = true;
+            };
+
+            forgotAccountLabel.Click += (s, e) =>
+            {
+                forgotPasswordPanel.Visible = true;
+                loginPanel.Visible = false;
+            };
+
+            signUpLabel.Click += (s, e) =>
+            {
+                createAccountPanel.Visible = true;
+                loginPanel.Visible = false;
+            };
+
 
             // Set hand cursor for the label
             alreadyHaveAccountLabel.Cursor = Cursors.Hand;
 
-            LoginBtn.Cursor = Cursors.Hand;
-            createAccountBtn.Cursor = Cursors.Hand;
+            loginLabel.Cursor = Cursors.Hand;
+            createaccountLabel.Cursor = Cursors.Hand;
+            cancelLabel.Cursor = Cursors.Hand;
+
 
 
             string fontPath = Path.Combine(Application.StartupPath, "Fonts", "font.ttf");
@@ -77,6 +98,8 @@
                 emailPanel.BorderColor = Color.FromArgb(221, 223, 226);
             };
 
+
+
             // Optionally, handle Leave if you want to reset on blur
             emailInput.Leave += (s, e) =>
             {
@@ -88,14 +111,17 @@
                 passwordPanel.BorderColor = Color.FromArgb(221, 223, 226);
             };
 
-            LoginBtn.MouseEnter += (s, e) =>
+            loginLabel.MouseEnter += (s, e) =>
             LoginBtn.BackColor = ColorTranslator.FromHtml("#1877f2");
-            LoginBtn.MouseLeave += (s, e) => LoginBtn.BackColor = Color.FromArgb(153, 24, 119, 242);
+            loginLabel.MouseLeave += (s, e) => LoginBtn.BackColor = Color.FromArgb(153, 24, 119, 242);
 
+            cancelLabel.MouseEnter += (s, e) =>
+            cancelBtn.BackColor = ColorTranslator.FromHtml("#E4E6EB");
+            cancelLabel.MouseLeave += (s, e) => cancelBtn.BackColor = Color.FromArgb(80, 228, 230, 235);
 
-            createAccountBtn.MouseEnter += (s, e) =>
+            createaccountLabel.MouseEnter += (s, e) =>
             createAccountBtn.BackColor = ColorTranslator.FromHtml("#36a420");
-            createAccountBtn.MouseLeave += (s, e) => createAccountBtn.BackColor = Color.FromArgb(153, 54, 164, 32);
+            createaccountLabel.MouseLeave += (s, e) => createAccountBtn.BackColor = Color.FromArgb(153, 54, 164, 32);
         }
 
         private void Form1_Load(object sender, EventArgs e)
