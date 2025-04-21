@@ -101,6 +101,17 @@
             roundedPanel19 = new RoundedPanel();
             label13 = new Label();
             label14 = new Label();
+            pictureBox3 = new PictureBox();
+            roundedPanel21 = new RoundedPanel();
+            label17 = new Label();
+            roundedPanel22 = new RoundedPanel();
+            textBox13 = new TextBox();
+            roundedPanel24 = new RoundedPanel();
+            textBox14 = new TextBox();
+            label24 = new Label();
+            linkLabel2 = new LinkLabel();
+            roundedPanel28 = new RoundedPanel();
+            label20 = new Label();
             roundedPanel1.SuspendLayout();
             emailPanel.SuspendLayout();
             passwordPanel.SuspendLayout();
@@ -133,6 +144,11 @@
             roundedPanel14.SuspendLayout();
             roundedPanel15.SuspendLayout();
             roundedPanel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            roundedPanel21.SuspendLayout();
+            roundedPanel22.SuspendLayout();
+            roundedPanel24.SuspendLayout();
+            roundedPanel28.SuspendLayout();
             SuspendLayout();
             // 
             // roundedPanel1
@@ -145,7 +161,7 @@
             roundedPanel1.Controls.Add(label1);
             roundedPanel1.Controls.Add(forgotPassword);
             roundedPanel1.Controls.Add(LoginBtn);
-            roundedPanel1.Location = new Point(752, 173);
+            roundedPanel1.Location = new Point(745, 173);
             roundedPanel1.Name = "roundedPanel1";
             roundedPanel1.Size = new Size(435, 413);
             roundedPanel1.TabIndex = 0;
@@ -243,7 +259,7 @@
             LoginBtn.BorderColor = Color.Gray;
             LoginBtn.Controls.Add(loginLabel);
             LoginBtn.CornerRadius = 8;
-            LoginBtn.Location = new Point(11, 175);
+            LoginBtn.Location = new Point(11, 172);
             LoginBtn.Name = "LoginBtn";
             LoginBtn.Size = new Size(412, 53);
             LoginBtn.TabIndex = 0;
@@ -304,6 +320,8 @@
             // 
             // createAccountPanel
             // 
+            createAccountPanel.Controls.Add(roundedPanel21);
+            createAccountPanel.Controls.Add(pictureBox3);
             createAccountPanel.Controls.Add(roundedPanel2);
             createAccountPanel.Controls.Add(pictureBox2);
             createAccountPanel.Dock = DockStyle.Fill;
@@ -957,6 +975,132 @@
             label14.TabIndex = 3;
             label14.Text = "label14";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(40, 105);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(300, 139);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 4;
+            pictureBox3.TabStop = false;
+            // 
+            // roundedPanel21
+            // 
+            roundedPanel21.BackColor = Color.White;
+            roundedPanel21.BorderColor = Color.Gray;
+            roundedPanel21.Controls.Add(label17);
+            roundedPanel21.Controls.Add(roundedPanel22);
+            roundedPanel21.Controls.Add(roundedPanel24);
+            roundedPanel21.Controls.Add(label24);
+            roundedPanel21.Controls.Add(linkLabel2);
+            roundedPanel21.Controls.Add(roundedPanel28);
+            roundedPanel21.Location = new Point(12, 195);
+            roundedPanel21.Name = "roundedPanel21";
+            roundedPanel21.Size = new Size(447, 322);
+            roundedPanel21.TabIndex = 10;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.ForeColor = Color.FromArgb(23, 102, 255);
+            label17.Location = new Point(208, 273);
+            label17.Name = "label17";
+            label17.Size = new Size(149, 20);
+            label17.TabIndex = 0;
+            label17.Text = "Sign up for Facebook";
+            label17.Click += label17_Click;
+            // 
+            // roundedPanel22
+            // 
+            roundedPanel22.BackColor = Color.Transparent;
+            roundedPanel22.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel22.BorderThickness = 1;
+            roundedPanel22.Controls.Add(textBox13);
+            roundedPanel22.CornerRadius = 8;
+            roundedPanel22.Location = new Point(17, 133);
+            roundedPanel22.Name = "roundedPanel22";
+            roundedPanel22.Size = new Size(412, 52);
+            roundedPanel22.TabIndex = 6;
+            // 
+            // textBox13
+            // 
+            textBox13.BorderStyle = BorderStyle.None;
+            textBox13.Location = new Point(8, 14);
+            textBox13.Name = "textBox13";
+            textBox13.PlaceholderText = "Password";
+            textBox13.Size = new Size(345, 20);
+            textBox13.TabIndex = 0;
+            // 
+            // roundedPanel24
+            // 
+            roundedPanel24.BackColor = Color.Transparent;
+            roundedPanel24.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel24.BorderThickness = 1;
+            roundedPanel24.Controls.Add(textBox14);
+            roundedPanel24.CornerRadius = 8;
+            roundedPanel24.Location = new Point(17, 67);
+            roundedPanel24.Name = "roundedPanel24";
+            roundedPanel24.Size = new Size(412, 52);
+            roundedPanel24.TabIndex = 5;
+            roundedPanel24.Paint += roundedPanel24_Paint;
+            // 
+            // textBox14
+            // 
+            textBox14.BorderStyle = BorderStyle.None;
+            textBox14.Location = new Point(8, 14);
+            textBox14.Name = "textBox14";
+            textBox14.PlaceholderText = "Mobile Number or email";
+            textBox14.Size = new Size(332, 20);
+            textBox14.TabIndex = 0;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Font = new Font("Arial", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label24.ForeColor = SystemColors.ActiveCaptionText;
+            label24.Location = new Point(119, 23);
+            label24.Name = "label24";
+            label24.Size = new Size(200, 26);
+            label24.TabIndex = 6;
+            label24.Text = "Log Into Facebook";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.LinkBehavior = LinkBehavior.HoverUnderline;
+            linkLabel2.LinkColor = Color.FromArgb(23, 102, 255);
+            linkLabel2.Location = new Point(84, 273);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(118, 20);
+            linkLabel2.TabIndex = 1;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Forgot Account?";
+            // 
+            // roundedPanel28
+            // 
+            roundedPanel28.BackColor = Color.FromArgb(153, 24, 119, 242);
+            roundedPanel28.BorderColor = Color.Gray;
+            roundedPanel28.Controls.Add(label20);
+            roundedPanel28.CornerRadius = 8;
+            roundedPanel28.Location = new Point(17, 198);
+            roundedPanel28.Name = "roundedPanel28";
+            roundedPanel28.Size = new Size(412, 53);
+            roundedPanel28.TabIndex = 0;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.BackColor = Color.Transparent;
+            label20.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.White;
+            label20.Location = new Point(178, 16);
+            label20.Name = "label20";
+            label20.Size = new Size(72, 25);
+            label20.TabIndex = 0;
+            label20.Text = "Log In";
+            // 
             // Form1
             // 
             AcceptButton = forgotPassword;
@@ -1026,6 +1170,15 @@
             roundedPanel15.ResumeLayout(false);
             roundedPanel15.PerformLayout();
             roundedPanel19.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            roundedPanel21.ResumeLayout(false);
+            roundedPanel21.PerformLayout();
+            roundedPanel22.ResumeLayout(false);
+            roundedPanel22.PerformLayout();
+            roundedPanel24.ResumeLayout(false);
+            roundedPanel24.PerformLayout();
+            roundedPanel28.ResumeLayout(false);
+            roundedPanel28.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1103,5 +1256,16 @@
         private Label label11;
         private RoundedPanel roundedPanel14;
         private Label label16;
+        private RoundedPanel roundedPanel21;
+        private Label label17;
+        private RoundedPanel roundedPanel22;
+        private TextBox textBox13;
+        private RoundedPanel roundedPanel24;
+        private TextBox textBox14;
+        private Label label24;
+        private PictureBox pictureBox3;
+        private LinkLabel linkLabel2;
+        private RoundedPanel roundedPanel28;
+        private Label label20;
     }
 }

@@ -162,5 +162,15 @@
         {
 
         }
+
+        private void roundedPanel24_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
