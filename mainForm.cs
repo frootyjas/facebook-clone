@@ -18,6 +18,12 @@
                 StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
             ConfigureHoverEffect(lblCreateAccount, rpCreateAccountContainer_wlcSec,
                 StyleConstants.DarkGreen, StyleConstants.SecondaryColor);
+            ConfigureHoverEffect(lblLogin_fgtSec, rpLoginContainer_fgtSec,
+                StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
+            ConfigureHoverEffect(lblSearch_fgtSec, rpSearchContainer_fgtSec,
+              StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
+            ConfigureHoverEffect(lblCancel_fgtSec, rpCancelContainer_fgtSec,
+              StyleConstants.LightGray, StyleConstants.LightGray);
             ApplyFonts();
             ConfigureInputFields();
 
@@ -57,11 +63,18 @@
             txtPasswordInput_fgtSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
             lblLogin_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
             lnkForgotPassword_fgtSec.Font = FontHelper.GetFont(StyleConstants.LinkFontSize, FontStyle.Bold);
+            lblInstruction.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
+            lblTitle.Font = FontHelper.GetFont(StyleConstants.HeaderFontSize, FontStyle.Bold);
+            lblCancel_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
+            lblSearch_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
+            txtEmailInputSearch_fgtSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
         }
+
         private void ConfigureInputFields()
         {
             ConfigurePasswordField(txtPasswordInput_lgnSec);
             ConfigurePasswordField(txtPasswordInput_wlcSec);
+            ConfigurePasswordField(txtPasswordInput_fgtSec);
         }
 
         private void SetupEventHandlers()
@@ -70,7 +83,7 @@
             lblCreateAccount.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
             alreadyHaveAccountLabel.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotPassword.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
-            lblCancel.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
+            lblCancel_fgtSec.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotAccount.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
             lnkSignupForFb.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
 
@@ -80,6 +93,9 @@
 
             SetupInputFieldFocus(txtEmailInput_wlcSec, rpEmailContainer_wlcSec, rpEmailContainer_wlcSec, rpPasswordContainer_wlcSec);
             SetupInputFieldFocus(txtPasswordInput_wlcSec, rpPasswordContainer_wlcSec, rpEmailContainer_wlcSec, rpPasswordContainer_wlcSec);
+
+            SetupInputFieldFocus(txtEmailInput_fgtSec, rpEmailContainer_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
+            SetupInputFieldFocus(txtPasswordInput_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
         }
         private void SetupInputFieldFocus(TextBox textBox, RoundedPanel container, params RoundedPanel[] allPanels)
         {

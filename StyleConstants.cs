@@ -5,6 +5,7 @@
         public static Color PrimaryColor = ColorTranslator.FromHtml("#1877f2");
         public static Color SecondaryColor = ColorTranslator.FromHtml("#42b72a");
         public static Color BorderColor = Color.FromArgb(221, 223, 226);
+        public static Color LightGray = Color.FromArgb(228, 230, 235);
         public static Color TransparentBlue = Color.FromArgb(190, 24, 119, 242);
         public static Color DarkGreen = Color.FromArgb(54, 164, 32);
 

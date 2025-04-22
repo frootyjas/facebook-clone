@@ -86,7 +86,7 @@
             lnkForgotPassword_fgtSec = new LinkLabel();
             rpLoginContainer_fgtSec = new RoundedPanel();
             lblLogin_fgtSec = new Label();
-            rpPasswordContainer = new RoundedPanel();
+            rpPasswordContainer_fgtSec = new RoundedPanel();
             txtPasswordInput_fgtSec = new TextBox();
             rpEmailContainer_fgtSec = new RoundedPanel();
             txtEmailInput_fgtSec = new TextBox();
@@ -94,14 +94,14 @@
             rpForgotPasswordBox = new RoundedPanel();
             label11 = new Label();
             label1 = new Label();
-            rpCancelContainer = new RoundedPanel();
-            lblCancel = new Label();
-            roundedPanel1 = new RoundedPanel();
-            textBox7 = new TextBox();
+            rpCancelContainer_fgtSec = new RoundedPanel();
+            lblCancel_fgtSec = new Label();
+            rpEmailContainerSearch_fgtSec = new RoundedPanel();
+            txtEmailInputSearch_fgtSec = new TextBox();
             lblTitle = new Label();
             lblInstruction = new Label();
-            rpSearchContainer = new RoundedPanel();
-            lblSearch = new Label();
+            rpSearchContainer_fgtSec = new RoundedPanel();
+            lblSearch_fgtSec = new Label();
             pnlLoginSection = new Panel();
             pnlFooter = new Panel();
             rpLoginBox = new RoundedPanel();
@@ -140,13 +140,13 @@
             forgotPasswordPanel.SuspendLayout();
             pnlNavBar.SuspendLayout();
             rpLoginContainer_fgtSec.SuspendLayout();
-            rpPasswordContainer.SuspendLayout();
+            rpPasswordContainer_fgtSec.SuspendLayout();
             rpEmailContainer_fgtSec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_fgtPass).BeginInit();
             rpForgotPasswordBox.SuspendLayout();
-            rpCancelContainer.SuspendLayout();
-            roundedPanel1.SuspendLayout();
-            rpSearchContainer.SuspendLayout();
+            rpCancelContainer_fgtSec.SuspendLayout();
+            rpEmailContainerSearch_fgtSec.SuspendLayout();
+            rpSearchContainer_fgtSec.SuspendLayout();
             pnlLoginSection.SuspendLayout();
             rpLoginBox.SuspendLayout();
             rpEmailContainer_lgnSec.SuspendLayout();
@@ -743,9 +743,9 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Location = new Point(0, 552);
+            panel1.Location = new Point(0, 576);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1596, 246);
+            panel1.Size = new Size(1596, 222);
             panel1.TabIndex = 4;
             // 
             // pnlNavBar
@@ -753,7 +753,7 @@
             pnlNavBar.BackColor = Color.White;
             pnlNavBar.Controls.Add(lnkForgotPassword_fgtSec);
             pnlNavBar.Controls.Add(rpLoginContainer_fgtSec);
-            pnlNavBar.Controls.Add(rpPasswordContainer);
+            pnlNavBar.Controls.Add(rpPasswordContainer_fgtSec);
             pnlNavBar.Controls.Add(rpEmailContainer_fgtSec);
             pnlNavBar.Controls.Add(picFacebookLogo_fgtPass);
             pnlNavBar.Location = new Point(0, 0);
@@ -797,23 +797,24 @@
             lblLogin_fgtSec.Text = "Log In";
             lblLogin_fgtSec.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // rpPasswordContainer
+            // rpPasswordContainer_fgtSec
             // 
-            rpPasswordContainer.BackColor = Color.Transparent;
-            rpPasswordContainer.BorderColor = Color.FromArgb(221, 223, 226);
-            rpPasswordContainer.BorderThickness = 1;
-            rpPasswordContainer.Controls.Add(txtPasswordInput_fgtSec);
-            rpPasswordContainer.CornerRadius = 5;
-            rpPasswordContainer.Location = new Point(1066, 10);
-            rpPasswordContainer.Name = "rpPasswordContainer";
-            rpPasswordContainer.Size = new Size(234, 52);
-            rpPasswordContainer.TabIndex = 6;
+            rpPasswordContainer_fgtSec.BackColor = Color.Transparent;
+            rpPasswordContainer_fgtSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpPasswordContainer_fgtSec.BorderThickness = 1;
+            rpPasswordContainer_fgtSec.Controls.Add(txtPasswordInput_fgtSec);
+            rpPasswordContainer_fgtSec.CornerRadius = 5;
+            rpPasswordContainer_fgtSec.Location = new Point(1066, 10);
+            rpPasswordContainer_fgtSec.Name = "rpPasswordContainer_fgtSec";
+            rpPasswordContainer_fgtSec.Size = new Size(234, 52);
+            rpPasswordContainer_fgtSec.TabIndex = 6;
             // 
             // txtPasswordInput_fgtSec
             // 
             txtPasswordInput_fgtSec.BorderStyle = BorderStyle.None;
-            txtPasswordInput_fgtSec.Location = new Point(16, 14);
+            txtPasswordInput_fgtSec.Location = new Point(17, 13);
             txtPasswordInput_fgtSec.Name = "txtPasswordInput_fgtSec";
+            txtPasswordInput_fgtSec.PasswordChar = '●';
             txtPasswordInput_fgtSec.PlaceholderText = "Password";
             txtPasswordInput_fgtSec.Size = new Size(199, 20);
             txtPasswordInput_fgtSec.TabIndex = 0;
@@ -833,7 +834,7 @@
             // txtEmailInput_fgtSec
             // 
             txtEmailInput_fgtSec.BorderStyle = BorderStyle.None;
-            txtEmailInput_fgtSec.Location = new Point(16, 14);
+            txtEmailInput_fgtSec.Location = new Point(17, 13);
             txtEmailInput_fgtSec.Name = "txtEmailInput_fgtSec";
             txtEmailInput_fgtSec.PlaceholderText = "Email or phone";
             txtEmailInput_fgtSec.Size = new Size(199, 20);
@@ -856,11 +857,12 @@
             rpForgotPasswordBox.BorderColor = Color.Gray;
             rpForgotPasswordBox.Controls.Add(label11);
             rpForgotPasswordBox.Controls.Add(label1);
-            rpForgotPasswordBox.Controls.Add(rpCancelContainer);
-            rpForgotPasswordBox.Controls.Add(roundedPanel1);
+            rpForgotPasswordBox.Controls.Add(rpCancelContainer_fgtSec);
+            rpForgotPasswordBox.Controls.Add(rpEmailContainerSearch_fgtSec);
             rpForgotPasswordBox.Controls.Add(lblTitle);
             rpForgotPasswordBox.Controls.Add(lblInstruction);
-            rpForgotPasswordBox.Controls.Add(rpSearchContainer);
+            rpForgotPasswordBox.Controls.Add(rpSearchContainer_fgtSec);
+            rpForgotPasswordBox.CornerRadius = 7;
             rpForgotPasswordBox.Location = new Point(490, 160);
             rpForgotPasswordBox.Name = "rpForgotPasswordBox";
             rpForgotPasswordBox.Size = new Size(581, 323);
@@ -870,7 +872,7 @@
             // 
             label11.BackColor = Color.FromArgb(218, 221, 225);
             label11.ForeColor = Color.FromArgb(218, 221, 225);
-            label11.Location = new Point(5, 240);
+            label11.Location = new Point(-2, 241);
             label11.Name = "label11";
             label11.Size = new Size(581, 1);
             label11.TabIndex = 7;
@@ -880,96 +882,96 @@
             // 
             label1.BackColor = Color.FromArgb(218, 221, 225);
             label1.ForeColor = Color.FromArgb(218, 221, 225);
-            label1.Location = new Point(5, 54);
+            label1.Location = new Point(1, 69);
             label1.Name = "label1";
             label1.Size = new Size(581, 1);
             label1.TabIndex = 6;
             label1.Text = "label1";
             // 
-            // rpCancelContainer
+            // rpCancelContainer_fgtSec
             // 
-            rpCancelContainer.BackColor = Color.FromArgb(228, 230, 235);
-            rpCancelContainer.BorderColor = Color.Gray;
-            rpCancelContainer.Controls.Add(lblCancel);
-            rpCancelContainer.CornerRadius = 5;
-            rpCancelContainer.Location = new Point(330, 262);
-            rpCancelContainer.Name = "rpCancelContainer";
-            rpCancelContainer.Size = new Size(108, 46);
-            rpCancelContainer.TabIndex = 1;
+            rpCancelContainer_fgtSec.BackColor = Color.FromArgb(228, 230, 235);
+            rpCancelContainer_fgtSec.BorderColor = Color.Gray;
+            rpCancelContainer_fgtSec.Controls.Add(lblCancel_fgtSec);
+            rpCancelContainer_fgtSec.CornerRadius = 5;
+            rpCancelContainer_fgtSec.Location = new Point(330, 262);
+            rpCancelContainer_fgtSec.Name = "rpCancelContainer_fgtSec";
+            rpCancelContainer_fgtSec.Size = new Size(111, 45);
+            rpCancelContainer_fgtSec.TabIndex = 1;
             // 
-            // lblCancel
+            // lblCancel_fgtSec
             // 
-            lblCancel.BackColor = Color.Transparent;
-            lblCancel.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCancel.ForeColor = Color.FromArgb(75, 79, 86);
-            lblCancel.Location = new Point(0, 0);
-            lblCancel.Name = "lblCancel";
-            lblCancel.Size = new Size(105, 45);
-            lblCancel.TabIndex = 0;
-            lblCancel.Text = "Cancel";
-            lblCancel.TextAlign = ContentAlignment.MiddleCenter;
+            lblCancel_fgtSec.BackColor = Color.Transparent;
+            lblCancel_fgtSec.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCancel_fgtSec.ForeColor = Color.FromArgb(75, 79, 86);
+            lblCancel_fgtSec.Location = new Point(3, 0);
+            lblCancel_fgtSec.Name = "lblCancel_fgtSec";
+            lblCancel_fgtSec.Size = new Size(105, 45);
+            lblCancel_fgtSec.TabIndex = 0;
+            lblCancel_fgtSec.Text = "Cancel";
+            lblCancel_fgtSec.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // roundedPanel1
+            // rpEmailContainerSearch_fgtSec
             // 
-            roundedPanel1.BackColor = Color.Transparent;
-            roundedPanel1.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel1.BorderThickness = 1;
-            roundedPanel1.Controls.Add(textBox7);
-            roundedPanel1.CornerRadius = 5;
-            roundedPanel1.Location = new Point(26, 131);
-            roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(529, 60);
-            roundedPanel1.TabIndex = 5;
+            rpEmailContainerSearch_fgtSec.BackColor = Color.Transparent;
+            rpEmailContainerSearch_fgtSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpEmailContainerSearch_fgtSec.BorderThickness = 1;
+            rpEmailContainerSearch_fgtSec.Controls.Add(txtEmailInputSearch_fgtSec);
+            rpEmailContainerSearch_fgtSec.CornerRadius = 5;
+            rpEmailContainerSearch_fgtSec.Location = new Point(23, 156);
+            rpEmailContainerSearch_fgtSec.Name = "rpEmailContainerSearch_fgtSec";
+            rpEmailContainerSearch_fgtSec.Size = new Size(535, 60);
+            rpEmailContainerSearch_fgtSec.TabIndex = 5;
             // 
-            // textBox7
+            // txtEmailInputSearch_fgtSec
             // 
-            textBox7.BorderStyle = BorderStyle.None;
-            textBox7.Location = new Point(16, 19);
-            textBox7.Name = "textBox7";
-            textBox7.PlaceholderText = "Email or phone number";
-            textBox7.Size = new Size(428, 20);
-            textBox7.TabIndex = 0;
+            txtEmailInputSearch_fgtSec.BorderStyle = BorderStyle.None;
+            txtEmailInputSearch_fgtSec.Location = new Point(14, 17);
+            txtEmailInputSearch_fgtSec.Name = "txtEmailInputSearch_fgtSec";
+            txtEmailInputSearch_fgtSec.PlaceholderText = "Email or phone number";
+            txtEmailInputSearch_fgtSec.Size = new Size(501, 20);
+            txtEmailInputSearch_fgtSec.TabIndex = 0;
             // 
             // lblTitle
             // 
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI Semilight", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(17, 10);
+            lblTitle.Location = new Point(15, 18);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(194, 31);
             lblTitle.TabIndex = 3;
-            lblTitle.Text = "Find Your Account";
+            lblTitle.Text = "Find your Account";
             // 
             // lblInstruction
             // 
-            lblInstruction.Location = new Point(26, 68);
+            lblInstruction.Location = new Point(19, 90);
             lblInstruction.Name = "lblInstruction";
-            lblInstruction.Size = new Size(494, 68);
+            lblInstruction.Size = new Size(524, 56);
             lblInstruction.TabIndex = 2;
             lblInstruction.Text = "Please enter your email or mobile number to search for your account.";
             // 
-            // rpSearchContainer
+            // rpSearchContainer_fgtSec
             // 
-            rpSearchContainer.BackColor = Color.FromArgb(24, 119, 242);
-            rpSearchContainer.BorderColor = Color.Gray;
-            rpSearchContainer.Controls.Add(lblSearch);
-            rpSearchContainer.CornerRadius = 5;
-            rpSearchContainer.Location = new Point(448, 262);
-            rpSearchContainer.Name = "rpSearchContainer";
-            rpSearchContainer.Size = new Size(107, 46);
-            rpSearchContainer.TabIndex = 2;
+            rpSearchContainer_fgtSec.BackColor = Color.FromArgb(24, 119, 242);
+            rpSearchContainer_fgtSec.BorderColor = Color.Gray;
+            rpSearchContainer_fgtSec.Controls.Add(lblSearch_fgtSec);
+            rpSearchContainer_fgtSec.CornerRadius = 5;
+            rpSearchContainer_fgtSec.Location = new Point(450, 262);
+            rpSearchContainer_fgtSec.Name = "rpSearchContainer_fgtSec";
+            rpSearchContainer_fgtSec.Size = new Size(111, 45);
+            rpSearchContainer_fgtSec.TabIndex = 2;
             // 
-            // lblSearch
+            // lblSearch_fgtSec
             // 
-            lblSearch.BackColor = Color.Transparent;
-            lblSearch.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSearch.ForeColor = Color.White;
-            lblSearch.Location = new Point(0, 0);
-            lblSearch.Name = "lblSearch";
-            lblSearch.Size = new Size(107, 46);
-            lblSearch.TabIndex = 0;
-            lblSearch.Text = "Search";
-            lblSearch.TextAlign = ContentAlignment.MiddleCenter;
+            lblSearch_fgtSec.BackColor = Color.Transparent;
+            lblSearch_fgtSec.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSearch_fgtSec.ForeColor = Color.White;
+            lblSearch_fgtSec.Location = new Point(1, 0);
+            lblSearch_fgtSec.Name = "lblSearch_fgtSec";
+            lblSearch_fgtSec.Size = new Size(107, 45);
+            lblSearch_fgtSec.TabIndex = 0;
+            lblSearch_fgtSec.Text = "Search";
+            lblSearch_fgtSec.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlLoginSection
             // 
@@ -1171,17 +1173,17 @@
             pnlNavBar.ResumeLayout(false);
             pnlNavBar.PerformLayout();
             rpLoginContainer_fgtSec.ResumeLayout(false);
-            rpPasswordContainer.ResumeLayout(false);
-            rpPasswordContainer.PerformLayout();
+            rpPasswordContainer_fgtSec.ResumeLayout(false);
+            rpPasswordContainer_fgtSec.PerformLayout();
             rpEmailContainer_fgtSec.ResumeLayout(false);
             rpEmailContainer_fgtSec.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_fgtPass).EndInit();
             rpForgotPasswordBox.ResumeLayout(false);
             rpForgotPasswordBox.PerformLayout();
-            rpCancelContainer.ResumeLayout(false);
-            roundedPanel1.ResumeLayout(false);
-            roundedPanel1.PerformLayout();
-            rpSearchContainer.ResumeLayout(false);
+            rpCancelContainer_fgtSec.ResumeLayout(false);
+            rpEmailContainerSearch_fgtSec.ResumeLayout(false);
+            rpEmailContainerSearch_fgtSec.PerformLayout();
+            rpSearchContainer_fgtSec.ResumeLayout(false);
             pnlLoginSection.ResumeLayout(false);
             rpLoginBox.ResumeLayout(false);
             rpLoginBox.PerformLayout();
@@ -1267,21 +1269,21 @@
         private RoundedPanel rpForgotPasswordBox;
         private Label lblTitle;
         private Label lblInstruction;
-        private RoundedPanel rpSearchContainer;
-        private Label lblSearch;
-        private RoundedPanel rpCancelContainer;
-        private Label lblCancel;
+        private RoundedPanel rpSearchContainer_fgtSec;
+        private Label lblSearch_fgtSec;
+        private RoundedPanel rpCancelContainer_fgtSec;
+        private Label lblCancel_fgtSec;
         private Label lblLogin_fgtSec;
         private RoundedPanel rpEmailContainer_fgtSec;
         private PictureBox picFacebookLogo_fgtPass;
         private RoundedPanel rpLoginContainer_fgtSec;
-        private RoundedPanel rpPasswordContainer;
+        private RoundedPanel rpPasswordContainer_fgtSec;
         private TextBox txtPasswordInput_fgtSec;
         private TextBox txtEmailInput_fgtSec;
         private Panel panel1;
         private LinkLabel lnkForgotPassword_fgtSec;
-        private RoundedPanel roundedPanel1;
-        private TextBox textBox7;
+        private RoundedPanel rpEmailContainerSearch_fgtSec;
+        private TextBox txtEmailInputSearch_fgtSec;
         private Label label1;
         private Label label11;
     }
