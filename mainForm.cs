@@ -6,6 +6,7 @@
     {
 
         private PanelManager _panelManager;
+        private List<Tuple<RoundedPanel, RadioButton>> _genderOptions = new List<Tuple<RoundedPanel, RadioButton>>();
 
         public mainForm()
         {
@@ -27,26 +28,90 @@
             ApplyFonts();
             ConfigureInputFields();
 
-            // Select first item automatically
-            if (cbbBirthday_crtAcctSec.Items.Count > 0)
-            {
-                cbbBirthday_crtAcctSec.SelectedIndex = 0;
-            }
+         
 
             // Remove blue highlight
-            ConfigureComboBoxAppearance();
+            ConfigureComboBoxAppearance(cbbBirthday_crtAcctSec, 0);
+            ConfigureComboBoxAppearance(cbbDay_crtAcctSec, 0);
+            ConfigureComboBoxAppearance(cbbYear_crtAcctSec, 0);
+
+            InitializeGenderOptions();
+            SetupGenderSelection();
 
 
         }
-        private void ConfigureComboBoxAppearance()
+
+        private void InitializeGenderOptions()
         {
-            // Set these properties
-            cbbBirthday_crtAcctSec.DrawMode = DrawMode.OwnerDrawFixed;
-            cbbBirthday_crtAcctSec.DropDownStyle = ComboBoxStyle.DropDownList;
-            cbbBirthday_crtAcctSec.DrawItem += CbbBirthday_crtAcctSec_DrawItem;
+            // Add all gender options to the list
+            _genderOptions.Add(Tuple.Create(rpFemaleRadioContainer_crtAcctSec, rdFemale_crtAcctSec));
+            _genderOptions.Add(Tuple.Create(rpMaleRadioContainer_crtAcctSec, rdMale_crtAcctSec));
+            //_genderOptions.Add(Tuple.Create(rpCustomRadioContainer_crtAcctSec, rdCustom_crtAcctSec));
+
+            // Set initial state
+            SetGenderSelection(rdFemale_crtAcctSec);
         }
 
-        private void CbbBirthday_crtAcctSec_DrawItem(object sender, DrawItemEventArgs e)
+        private void SetupGenderSelection()
+        {
+            foreach (var option in _genderOptions)
+            {
+                // Handle panel clicks
+                option.Item1.Click += (s, e) => SelectGender(option.Item2);
+
+                // Handle radio button clicks
+                option.Item2.Click += (s, e) => SelectGender(option.Item2);
+
+                // Prevent automatic checking so we can control the behavior
+                option.Item2.AutoCheck = false;
+            }
+        }
+
+        private void SelectGender(RadioButton selectedRadio)
+        {
+            foreach (var option in _genderOptions)
+            {
+                bool isSelected = option.Item2 == selectedRadio;
+
+                // Update radio button state
+                option.Item2.Checked = isSelected;
+
+                // Update panel appearance
+                option.Item1.BorderColor = isSelected ? Color.LightGray : Color.LightGray;
+                option.Item1.BackColor = isSelected ? ColorTranslator.FromHtml("#00000000") : Color.White;
+            }
+        }
+
+        private void SetGenderSelection(RadioButton defaultSelection)
+        {
+            defaultSelection.Checked = true;
+            SelectGender(defaultSelection);
+        }
+
+        // Usage example: To get selected gender
+        private string GetSelectedGender()
+        {
+            if (rdFemale_crtAcctSec.Checked) return "Female";
+            if (rdMale_crtAcctSec.Checked) return "Male";
+            if (rdCustom_crtAcctSec.Checked) return "Custom";
+            return string.Empty;
+        }
+
+        private void ConfigureComboBoxAppearance(ComboBox combobox, int selected)
+        {
+            // Select first item automatically
+            if (combobox.Items.Count > 0)
+            {
+                combobox.SelectedIndex = selected;
+            }
+
+            // Set these properties
+            combobox.DrawMode = DrawMode.OwnerDrawFixed;
+            combobox.DropDownStyle = ComboBoxStyle.DropDownList;
+            combobox.DrawItem += Cbb_DrawItem;
+        }
+
+        private void Cbb_DrawItem(object sender, DrawItemEventArgs e)
         {
             if (e.Index < 0) return;
 
@@ -54,11 +119,11 @@
 
             // Custom colors example
             Color backColor = (e.State & DrawItemState.Selected) == DrawItemState.Selected
-                ? ColorTranslator.FromHtml("#00000000")  // Light gray
+                ? ColorTranslator.FromHtml("#00000000")  // Transparent
                 : ColorTranslator.FromHtml("#FFFFFF"); // White
 
             Color textColor = (e.State & DrawItemState.Selected) == DrawItemState.Selected
-                ? ColorTranslator.FromHtml("#383a3c")  // Facebook blue
+                ? ColorTranslator.FromHtml("#383a3c")  // 
                 : ColorTranslator.FromHtml("#444444"); // Dark gray
 
             // Draw background

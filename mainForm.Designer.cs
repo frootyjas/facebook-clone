@@ -50,35 +50,35 @@
             linkLabel4 = new LinkLabel();
             linkLabel3 = new LinkLabel();
             linkLabel2 = new LinkLabel();
-            roundedPanel14 = new RoundedPanel();
-            label12 = new Label();
+            rpSignUpContainer_crtAcctSec = new RoundedPanel();
+            lblSignUpContainer_crtAcctSec = new Label();
             linkLabel1 = new LinkLabel();
-            roundedPanel5 = new RoundedPanel();
+            rpCustomRadioContainer_crtAcctSec = new RoundedPanel();
             label7 = new Label();
-            radioButton1 = new RadioButton();
-            roundedPanel13 = new RoundedPanel();
+            rdCustom_crtAcctSec = new RadioButton();
+            rpMaleRadioContainer_crtAcctSec = new RoundedPanel();
             label6 = new Label();
-            radioButton4 = new RadioButton();
-            roundedPanel10 = new RoundedPanel();
+            rdMale_crtAcctSec = new RadioButton();
+            rpFemaleRadioContainer_crtAcctSec = new RoundedPanel();
             label9 = new Label();
-            radioButton2 = new RadioButton();
-            roundedPanel7 = new RoundedPanel();
+            rdFemale_crtAcctSec = new RadioButton();
+            rpYearContainer_crtAcctSec = new RoundedPanel();
             panel2 = new Panel();
             pictureBox3 = new PictureBox();
-            comboBox4 = new ComboBox();
-            roundedPanel3 = new RoundedPanel();
+            cbbYear_crtAcctSec = new ComboBox();
+            rpDayContainer_crtAcctSec = new RoundedPanel();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
-            comboBox2 = new ComboBox();
-            roundedPanel12 = new RoundedPanel();
-            textBox4 = new TextBox();
+            cbbDay_crtAcctSec = new ComboBox();
+            rpPasswordContainer_crtAcctSec = new RoundedPanel();
+            txtPasswordInput_crtAcctSec = new TextBox();
             label2 = new Label();
-            roundedPanel4 = new RoundedPanel();
-            textBox3 = new TextBox();
-            roundedPanel2 = new RoundedPanel();
-            textBox2 = new TextBox();
-            roundedPanel1 = new RoundedPanel();
-            textBox1 = new TextBox();
+            rpEmailContainer_crtAcctSec = new RoundedPanel();
+            txtEmailInput_crtAcctSec = new TextBox();
+            rpLastNameContainer_crtAcctSec = new RoundedPanel();
+            txtLastNameInput_crtAcctSec = new TextBox();
+            rpFirstNameContainer_crtAcctSec = new RoundedPanel();
+            txtFirstNameInput_crtAcctSec = new TextBox();
             rpBirthdayContainer_crtAcctSec = new RoundedPanel();
             pnlDropdownContainer = new Panel();
             picDrowdownLogo = new PictureBox();
@@ -135,20 +135,20 @@
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_wlcSec).BeginInit();
             createAccountPanel.SuspendLayout();
             rpCreateAccountContainer.SuspendLayout();
-            roundedPanel14.SuspendLayout();
-            roundedPanel5.SuspendLayout();
-            roundedPanel13.SuspendLayout();
-            roundedPanel10.SuspendLayout();
-            roundedPanel7.SuspendLayout();
+            rpSignUpContainer_crtAcctSec.SuspendLayout();
+            rpCustomRadioContainer_crtAcctSec.SuspendLayout();
+            rpMaleRadioContainer_crtAcctSec.SuspendLayout();
+            rpFemaleRadioContainer_crtAcctSec.SuspendLayout();
+            rpYearContainer_crtAcctSec.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            roundedPanel3.SuspendLayout();
+            rpDayContainer_crtAcctSec.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            roundedPanel12.SuspendLayout();
-            roundedPanel4.SuspendLayout();
-            roundedPanel2.SuspendLayout();
-            roundedPanel1.SuspendLayout();
+            rpPasswordContainer_crtAcctSec.SuspendLayout();
+            rpEmailContainer_crtAcctSec.SuspendLayout();
+            rpLastNameContainer_crtAcctSec.SuspendLayout();
+            rpFirstNameContainer_crtAcctSec.SuspendLayout();
             rpBirthdayContainer_crtAcctSec.SuspendLayout();
             pnlDropdownContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picDrowdownLogo).BeginInit();
@@ -359,18 +359,18 @@
             rpCreateAccountContainer.Controls.Add(linkLabel4);
             rpCreateAccountContainer.Controls.Add(linkLabel3);
             rpCreateAccountContainer.Controls.Add(linkLabel2);
-            rpCreateAccountContainer.Controls.Add(roundedPanel14);
+            rpCreateAccountContainer.Controls.Add(rpSignUpContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(linkLabel1);
-            rpCreateAccountContainer.Controls.Add(roundedPanel5);
-            rpCreateAccountContainer.Controls.Add(roundedPanel13);
-            rpCreateAccountContainer.Controls.Add(roundedPanel10);
-            rpCreateAccountContainer.Controls.Add(roundedPanel7);
-            rpCreateAccountContainer.Controls.Add(roundedPanel3);
-            rpCreateAccountContainer.Controls.Add(roundedPanel12);
+            rpCreateAccountContainer.Controls.Add(rpCustomRadioContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpMaleRadioContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpFemaleRadioContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpYearContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpDayContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpPasswordContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(label2);
-            rpCreateAccountContainer.Controls.Add(roundedPanel4);
-            rpCreateAccountContainer.Controls.Add(roundedPanel2);
-            rpCreateAccountContainer.Controls.Add(roundedPanel1);
+            rpCreateAccountContainer.Controls.Add(rpEmailContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpLastNameContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(rpFirstNameContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpBirthdayContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(label3);
             rpCreateAccountContainer.Controls.Add(textBox5);
@@ -439,28 +439,28 @@
             linkLabel2.TabStop = true;
             linkLabel2.Text = "Terms,";
             // 
-            // roundedPanel14
+            // rpSignUpContainer_crtAcctSec
             // 
-            roundedPanel14.BackColor = Color.FromArgb(153, 54, 164, 32);
-            roundedPanel14.BorderColor = Color.Gray;
-            roundedPanel14.Controls.Add(label12);
-            roundedPanel14.CornerRadius = 5;
-            roundedPanel14.Location = new Point(148, 631);
-            roundedPanel14.Name = "roundedPanel14";
-            roundedPanel14.Size = new Size(240, 46);
-            roundedPanel14.TabIndex = 15;
+            rpSignUpContainer_crtAcctSec.BackColor = Color.FromArgb(153, 54, 164, 32);
+            rpSignUpContainer_crtAcctSec.BorderColor = Color.Gray;
+            rpSignUpContainer_crtAcctSec.Controls.Add(lblSignUpContainer_crtAcctSec);
+            rpSignUpContainer_crtAcctSec.CornerRadius = 5;
+            rpSignUpContainer_crtAcctSec.Location = new Point(148, 631);
+            rpSignUpContainer_crtAcctSec.Name = "rpSignUpContainer_crtAcctSec";
+            rpSignUpContainer_crtAcctSec.Size = new Size(240, 46);
+            rpSignUpContainer_crtAcctSec.TabIndex = 15;
             // 
-            // label12
+            // lblSignUpContainer_crtAcctSec
             // 
-            label12.BackColor = Color.Transparent;
-            label12.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.White;
-            label12.Location = new Point(-2, -1);
-            label12.Name = "label12";
-            label12.Size = new Size(242, 47);
-            label12.TabIndex = 0;
-            label12.Text = "Sign Up";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
+            lblSignUpContainer_crtAcctSec.BackColor = Color.Transparent;
+            lblSignUpContainer_crtAcctSec.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSignUpContainer_crtAcctSec.ForeColor = Color.White;
+            lblSignUpContainer_crtAcctSec.Location = new Point(-2, -1);
+            lblSignUpContainer_crtAcctSec.Name = "lblSignUpContainer_crtAcctSec";
+            lblSignUpContainer_crtAcctSec.Size = new Size(242, 47);
+            lblSignUpContainer_crtAcctSec.TabIndex = 0;
+            lblSignUpContainer_crtAcctSec.Text = "Sign Up";
+            lblSignUpContainer_crtAcctSec.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // linkLabel1
             // 
@@ -475,50 +475,52 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Learn more.";
             // 
-            // roundedPanel5
+            // rpCustomRadioContainer_crtAcctSec
             // 
-            roundedPanel5.BackColor = Color.Transparent;
-            roundedPanel5.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel5.BorderThickness = 1;
-            roundedPanel5.Controls.Add(label7);
-            roundedPanel5.Controls.Add(radioButton1);
-            roundedPanel5.CornerRadius = 5;
-            roundedPanel5.Location = new Point(354, 300);
-            roundedPanel5.Name = "roundedPanel5";
-            roundedPanel5.Size = new Size(151, 44);
-            roundedPanel5.TabIndex = 13;
+            rpCustomRadioContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpCustomRadioContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpCustomRadioContainer_crtAcctSec.BorderThickness = 1;
+            rpCustomRadioContainer_crtAcctSec.Controls.Add(label7);
+            rpCustomRadioContainer_crtAcctSec.Controls.Add(rdCustom_crtAcctSec);
+            rpCustomRadioContainer_crtAcctSec.CornerRadius = 5;
+            rpCustomRadioContainer_crtAcctSec.Location = new Point(354, 300);
+            rpCustomRadioContainer_crtAcctSec.Name = "rpCustomRadioContainer_crtAcctSec";
+            rpCustomRadioContainer_crtAcctSec.Size = new Size(151, 44);
+            rpCustomRadioContainer_crtAcctSec.TabIndex = 13;
             // 
             // label7
             // 
             label7.AutoSize = true;
+            label7.Enabled = false;
             label7.Location = new Point(11, 13);
             label7.Name = "label7";
-            label7.Size = new Size(45, 19);
+            label7.Size = new Size(63, 19);
             label7.TabIndex = 2;
-            label7.Text = "Male";
+            label7.Text = "Custom";
             // 
-            // radioButton1
+            // rdCustom_crtAcctSec
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(124, 14);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(17, 16);
-            radioButton1.TabIndex = 1;
-            radioButton1.TabStop = true;
-            radioButton1.UseVisualStyleBackColor = true;
+            rdCustom_crtAcctSec.AutoSize = true;
+            rdCustom_crtAcctSec.Enabled = false;
+            rdCustom_crtAcctSec.Location = new Point(124, 14);
+            rdCustom_crtAcctSec.Name = "rdCustom_crtAcctSec";
+            rdCustom_crtAcctSec.Size = new Size(17, 16);
+            rdCustom_crtAcctSec.TabIndex = 1;
+            rdCustom_crtAcctSec.TabStop = true;
+            rdCustom_crtAcctSec.UseVisualStyleBackColor = true;
             // 
-            // roundedPanel13
+            // rpMaleRadioContainer_crtAcctSec
             // 
-            roundedPanel13.BackColor = Color.Transparent;
-            roundedPanel13.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel13.BorderThickness = 1;
-            roundedPanel13.Controls.Add(label6);
-            roundedPanel13.Controls.Add(radioButton4);
-            roundedPanel13.CornerRadius = 5;
-            roundedPanel13.Location = new Point(188, 300);
-            roundedPanel13.Name = "roundedPanel13";
-            roundedPanel13.Size = new Size(151, 44);
-            roundedPanel13.TabIndex = 12;
+            rpMaleRadioContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpMaleRadioContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpMaleRadioContainer_crtAcctSec.BorderThickness = 1;
+            rpMaleRadioContainer_crtAcctSec.Controls.Add(label6);
+            rpMaleRadioContainer_crtAcctSec.Controls.Add(rdMale_crtAcctSec);
+            rpMaleRadioContainer_crtAcctSec.CornerRadius = 5;
+            rpMaleRadioContainer_crtAcctSec.Location = new Point(188, 300);
+            rpMaleRadioContainer_crtAcctSec.Name = "rpMaleRadioContainer_crtAcctSec";
+            rpMaleRadioContainer_crtAcctSec.Size = new Size(151, 44);
+            rpMaleRadioContainer_crtAcctSec.TabIndex = 12;
             // 
             // label6
             // 
@@ -529,60 +531,60 @@
             label6.TabIndex = 2;
             label6.Text = "Male";
             // 
-            // radioButton4
+            // rdMale_crtAcctSec
             // 
-            radioButton4.AutoSize = true;
-            radioButton4.Location = new Point(124, 14);
-            radioButton4.Name = "radioButton4";
-            radioButton4.Size = new Size(17, 16);
-            radioButton4.TabIndex = 1;
-            radioButton4.TabStop = true;
-            radioButton4.UseVisualStyleBackColor = true;
+            rdMale_crtAcctSec.AutoSize = true;
+            rdMale_crtAcctSec.Location = new Point(124, 14);
+            rdMale_crtAcctSec.Name = "rdMale_crtAcctSec";
+            rdMale_crtAcctSec.Size = new Size(17, 16);
+            rdMale_crtAcctSec.TabIndex = 1;
+            rdMale_crtAcctSec.TabStop = true;
+            rdMale_crtAcctSec.UseVisualStyleBackColor = true;
             // 
-            // roundedPanel10
+            // rpFemaleRadioContainer_crtAcctSec
             // 
-            roundedPanel10.BackColor = Color.Transparent;
-            roundedPanel10.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel10.BorderThickness = 1;
-            roundedPanel10.Controls.Add(label9);
-            roundedPanel10.Controls.Add(radioButton2);
-            roundedPanel10.CornerRadius = 5;
-            roundedPanel10.Location = new Point(22, 300);
-            roundedPanel10.Name = "roundedPanel10";
-            roundedPanel10.Size = new Size(151, 44);
-            roundedPanel10.TabIndex = 11;
+            rpFemaleRadioContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpFemaleRadioContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpFemaleRadioContainer_crtAcctSec.BorderThickness = 1;
+            rpFemaleRadioContainer_crtAcctSec.Controls.Add(label9);
+            rpFemaleRadioContainer_crtAcctSec.Controls.Add(rdFemale_crtAcctSec);
+            rpFemaleRadioContainer_crtAcctSec.CornerRadius = 5;
+            rpFemaleRadioContainer_crtAcctSec.Location = new Point(22, 300);
+            rpFemaleRadioContainer_crtAcctSec.Name = "rpFemaleRadioContainer_crtAcctSec";
+            rpFemaleRadioContainer_crtAcctSec.Size = new Size(151, 44);
+            rpFemaleRadioContainer_crtAcctSec.TabIndex = 11;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Location = new Point(11, 13);
             label9.Name = "label9";
-            label9.Size = new Size(45, 19);
+            label9.Size = new Size(63, 19);
             label9.TabIndex = 2;
-            label9.Text = "Male";
+            label9.Text = "Female";
             // 
-            // radioButton2
+            // rdFemale_crtAcctSec
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(124, 14);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(17, 16);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.UseVisualStyleBackColor = true;
+            rdFemale_crtAcctSec.AutoSize = true;
+            rdFemale_crtAcctSec.Location = new Point(124, 14);
+            rdFemale_crtAcctSec.Name = "rdFemale_crtAcctSec";
+            rdFemale_crtAcctSec.Size = new Size(17, 16);
+            rdFemale_crtAcctSec.TabIndex = 1;
+            rdFemale_crtAcctSec.TabStop = true;
+            rdFemale_crtAcctSec.UseVisualStyleBackColor = true;
             // 
-            // roundedPanel7
+            // rpYearContainer_crtAcctSec
             // 
-            roundedPanel7.BackColor = Color.Transparent;
-            roundedPanel7.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel7.BorderThickness = 1;
-            roundedPanel7.Controls.Add(panel2);
-            roundedPanel7.Controls.Add(comboBox4);
-            roundedPanel7.CornerRadius = 5;
-            roundedPanel7.Location = new Point(354, 215);
-            roundedPanel7.Name = "roundedPanel7";
-            roundedPanel7.Size = new Size(151, 44);
-            roundedPanel7.TabIndex = 12;
+            rpYearContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpYearContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpYearContainer_crtAcctSec.BorderThickness = 1;
+            rpYearContainer_crtAcctSec.Controls.Add(panel2);
+            rpYearContainer_crtAcctSec.Controls.Add(cbbYear_crtAcctSec);
+            rpYearContainer_crtAcctSec.CornerRadius = 5;
+            rpYearContainer_crtAcctSec.Location = new Point(354, 215);
+            rpYearContainer_crtAcctSec.Name = "rpYearContainer_crtAcctSec";
+            rpYearContainer_crtAcctSec.Size = new Size(151, 44);
+            rpYearContainer_crtAcctSec.TabIndex = 12;
             // 
             // panel2
             // 
@@ -602,30 +604,30 @@
             pictureBox3.TabIndex = 6;
             pictureBox3.TabStop = false;
             // 
-            // comboBox4
+            // cbbYear_crtAcctSec
             // 
-            comboBox4.BackColor = Color.White;
-            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox4.FlatStyle = FlatStyle.Flat;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "April", "August", "December", "February", "January", "July", "June", "March", "May", "November", "October", "September" });
-            comboBox4.Location = new Point(16, 8);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(135, 27);
-            comboBox4.TabIndex = 10;
+            cbbYear_crtAcctSec.BackColor = Color.White;
+            cbbYear_crtAcctSec.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbYear_crtAcctSec.FlatStyle = FlatStyle.Flat;
+            cbbYear_crtAcctSec.FormattingEnabled = true;
+            cbbYear_crtAcctSec.Items.AddRange(new object[] { "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011", "2010", "2009", "2008", "2007", "2006", "2005", "2004", "2003", "2002", "2001", "2000", "1999", "1998", "1997", "1996", "1995", "1994", "1993", "1992", "1991", "1990", "1989", "1988", "1987", "1986", "1985", "1984", "1983", "1982", "1981", "1980", "1979", "1978", "1977", "1976", "1975", "1974", "1973", "1972", "1971", "1970", "1969", "1968", "1967", "1966", "1965", "1964", "1963", "1962", "1961", "1960", "1959", "1958", "1957", "1956", "1955", "1954", "1953", "1952", "1951", "1950", "1949", "1948", "1947", "1946", "1945", "1944", "1943", "1942", "1941", "1940", "1939", "1938", "1937", "1936", "1935", "1934", "1933", "1932", "1931", "1930", "1929", "1928", "1927", "1926", "1925", "1924", "1923", "1922", "1921", "1920", "1919", "1918", "1917", "1916", "1915", "1914", "1913", "1912", "1911", "1910", "1909", "1908", "1907", "1906", "1905" });
+            cbbYear_crtAcctSec.Location = new Point(16, 8);
+            cbbYear_crtAcctSec.Name = "cbbYear_crtAcctSec";
+            cbbYear_crtAcctSec.Size = new Size(135, 27);
+            cbbYear_crtAcctSec.TabIndex = 10;
             // 
-            // roundedPanel3
+            // rpDayContainer_crtAcctSec
             // 
-            roundedPanel3.BackColor = Color.Transparent;
-            roundedPanel3.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel3.BorderThickness = 1;
-            roundedPanel3.Controls.Add(panel1);
-            roundedPanel3.Controls.Add(comboBox2);
-            roundedPanel3.CornerRadius = 5;
-            roundedPanel3.Location = new Point(188, 215);
-            roundedPanel3.Name = "roundedPanel3";
-            roundedPanel3.Size = new Size(151, 44);
-            roundedPanel3.TabIndex = 11;
+            rpDayContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpDayContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpDayContainer_crtAcctSec.BorderThickness = 1;
+            rpDayContainer_crtAcctSec.Controls.Add(panel1);
+            rpDayContainer_crtAcctSec.Controls.Add(cbbDay_crtAcctSec);
+            rpDayContainer_crtAcctSec.CornerRadius = 5;
+            rpDayContainer_crtAcctSec.Location = new Point(188, 215);
+            rpDayContainer_crtAcctSec.Name = "rpDayContainer_crtAcctSec";
+            rpDayContainer_crtAcctSec.Size = new Size(151, 44);
+            rpDayContainer_crtAcctSec.TabIndex = 11;
             // 
             // panel1
             // 
@@ -645,38 +647,38 @@
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
-            // comboBox2
+            // cbbDay_crtAcctSec
             // 
-            comboBox2.BackColor = Color.White;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FlatStyle = FlatStyle.Flat;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "April", "August", "December", "February", "January", "July", "June", "March", "May", "November", "October", "September" });
-            comboBox2.Location = new Point(16, 8);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(135, 27);
-            comboBox2.TabIndex = 10;
+            cbbDay_crtAcctSec.BackColor = Color.White;
+            cbbDay_crtAcctSec.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbDay_crtAcctSec.FlatStyle = FlatStyle.Flat;
+            cbbDay_crtAcctSec.FormattingEnabled = true;
+            cbbDay_crtAcctSec.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" });
+            cbbDay_crtAcctSec.Location = new Point(16, 8);
+            cbbDay_crtAcctSec.Name = "cbbDay_crtAcctSec";
+            cbbDay_crtAcctSec.Size = new Size(135, 27);
+            cbbDay_crtAcctSec.TabIndex = 10;
             // 
-            // roundedPanel12
+            // rpPasswordContainer_crtAcctSec
             // 
-            roundedPanel12.BackColor = Color.Transparent;
-            roundedPanel12.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel12.BorderThickness = 1;
-            roundedPanel12.Controls.Add(textBox4);
-            roundedPanel12.CornerRadius = 5;
-            roundedPanel12.Location = new Point(21, 425);
-            roundedPanel12.Name = "roundedPanel12";
-            roundedPanel12.Size = new Size(484, 52);
-            roundedPanel12.TabIndex = 13;
+            rpPasswordContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpPasswordContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpPasswordContainer_crtAcctSec.BorderThickness = 1;
+            rpPasswordContainer_crtAcctSec.Controls.Add(txtPasswordInput_crtAcctSec);
+            rpPasswordContainer_crtAcctSec.CornerRadius = 5;
+            rpPasswordContainer_crtAcctSec.Location = new Point(21, 425);
+            rpPasswordContainer_crtAcctSec.Name = "rpPasswordContainer_crtAcctSec";
+            rpPasswordContainer_crtAcctSec.Size = new Size(484, 52);
+            rpPasswordContainer_crtAcctSec.TabIndex = 13;
             // 
-            // textBox4
+            // txtPasswordInput_crtAcctSec
             // 
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Location = new Point(17, 13);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "First name";
-            textBox4.Size = new Size(199, 20);
-            textBox4.TabIndex = 0;
+            txtPasswordInput_crtAcctSec.BorderStyle = BorderStyle.None;
+            txtPasswordInput_crtAcctSec.Location = new Point(17, 13);
+            txtPasswordInput_crtAcctSec.Name = "txtPasswordInput_crtAcctSec";
+            txtPasswordInput_crtAcctSec.PlaceholderText = "New password";
+            txtPasswordInput_crtAcctSec.Size = new Size(449, 20);
+            txtPasswordInput_crtAcctSec.TabIndex = 0;
             // 
             // label2
             // 
@@ -690,68 +692,68 @@
             label2.Text = "Birthday";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
-            // roundedPanel4
+            // rpEmailContainer_crtAcctSec
             // 
-            roundedPanel4.BackColor = Color.Transparent;
-            roundedPanel4.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel4.BorderThickness = 1;
-            roundedPanel4.Controls.Add(textBox3);
-            roundedPanel4.CornerRadius = 5;
-            roundedPanel4.Location = new Point(21, 359);
-            roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new Size(484, 52);
-            roundedPanel4.TabIndex = 12;
+            rpEmailContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpEmailContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpEmailContainer_crtAcctSec.BorderThickness = 1;
+            rpEmailContainer_crtAcctSec.Controls.Add(txtEmailInput_crtAcctSec);
+            rpEmailContainer_crtAcctSec.CornerRadius = 5;
+            rpEmailContainer_crtAcctSec.Location = new Point(21, 359);
+            rpEmailContainer_crtAcctSec.Name = "rpEmailContainer_crtAcctSec";
+            rpEmailContainer_crtAcctSec.Size = new Size(484, 52);
+            rpEmailContainer_crtAcctSec.TabIndex = 12;
             // 
-            // textBox3
+            // txtEmailInput_crtAcctSec
             // 
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Location = new Point(17, 13);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "First name";
-            textBox3.Size = new Size(199, 20);
-            textBox3.TabIndex = 0;
+            txtEmailInput_crtAcctSec.BorderStyle = BorderStyle.None;
+            txtEmailInput_crtAcctSec.Location = new Point(17, 13);
+            txtEmailInput_crtAcctSec.Name = "txtEmailInput_crtAcctSec";
+            txtEmailInput_crtAcctSec.PlaceholderText = "Mobile Number or email";
+            txtEmailInput_crtAcctSec.Size = new Size(447, 20);
+            txtEmailInput_crtAcctSec.TabIndex = 0;
             // 
-            // roundedPanel2
+            // rpLastNameContainer_crtAcctSec
             // 
-            roundedPanel2.BackColor = Color.Transparent;
-            roundedPanel2.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel2.BorderThickness = 1;
-            roundedPanel2.Controls.Add(textBox2);
-            roundedPanel2.CornerRadius = 5;
-            roundedPanel2.Location = new Point(271, 117);
-            roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(234, 52);
-            roundedPanel2.TabIndex = 12;
+            rpLastNameContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpLastNameContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpLastNameContainer_crtAcctSec.BorderThickness = 1;
+            rpLastNameContainer_crtAcctSec.Controls.Add(txtLastNameInput_crtAcctSec);
+            rpLastNameContainer_crtAcctSec.CornerRadius = 5;
+            rpLastNameContainer_crtAcctSec.Location = new Point(271, 117);
+            rpLastNameContainer_crtAcctSec.Name = "rpLastNameContainer_crtAcctSec";
+            rpLastNameContainer_crtAcctSec.Size = new Size(234, 52);
+            rpLastNameContainer_crtAcctSec.TabIndex = 12;
             // 
-            // textBox2
+            // txtLastNameInput_crtAcctSec
             // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(17, 13);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Last name";
-            textBox2.Size = new Size(199, 20);
-            textBox2.TabIndex = 0;
+            txtLastNameInput_crtAcctSec.BorderStyle = BorderStyle.None;
+            txtLastNameInput_crtAcctSec.Location = new Point(17, 13);
+            txtLastNameInput_crtAcctSec.Name = "txtLastNameInput_crtAcctSec";
+            txtLastNameInput_crtAcctSec.PlaceholderText = "Last name";
+            txtLastNameInput_crtAcctSec.Size = new Size(199, 20);
+            txtLastNameInput_crtAcctSec.TabIndex = 0;
             // 
-            // roundedPanel1
+            // rpFirstNameContainer_crtAcctSec
             // 
-            roundedPanel1.BackColor = Color.Transparent;
-            roundedPanel1.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel1.BorderThickness = 1;
-            roundedPanel1.Controls.Add(textBox1);
-            roundedPanel1.CornerRadius = 5;
-            roundedPanel1.Location = new Point(22, 117);
-            roundedPanel1.Name = "roundedPanel1";
-            roundedPanel1.Size = new Size(234, 52);
-            roundedPanel1.TabIndex = 11;
+            rpFirstNameContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpFirstNameContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpFirstNameContainer_crtAcctSec.BorderThickness = 1;
+            rpFirstNameContainer_crtAcctSec.Controls.Add(txtFirstNameInput_crtAcctSec);
+            rpFirstNameContainer_crtAcctSec.CornerRadius = 5;
+            rpFirstNameContainer_crtAcctSec.Location = new Point(22, 117);
+            rpFirstNameContainer_crtAcctSec.Name = "rpFirstNameContainer_crtAcctSec";
+            rpFirstNameContainer_crtAcctSec.Size = new Size(234, 52);
+            rpFirstNameContainer_crtAcctSec.TabIndex = 11;
             // 
-            // textBox1
+            // txtFirstNameInput_crtAcctSec
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(17, 13);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "First name";
-            textBox1.Size = new Size(199, 20);
-            textBox1.TabIndex = 0;
+            txtFirstNameInput_crtAcctSec.BorderStyle = BorderStyle.None;
+            txtFirstNameInput_crtAcctSec.Location = new Point(17, 13);
+            txtFirstNameInput_crtAcctSec.Name = "txtFirstNameInput_crtAcctSec";
+            txtFirstNameInput_crtAcctSec.PlaceholderText = "First name";
+            txtFirstNameInput_crtAcctSec.Size = new Size(199, 20);
+            txtFirstNameInput_crtAcctSec.TabIndex = 0;
             // 
             // rpBirthdayContainer_crtAcctSec
             // 
@@ -1296,27 +1298,27 @@
             createAccountPanel.PerformLayout();
             rpCreateAccountContainer.ResumeLayout(false);
             rpCreateAccountContainer.PerformLayout();
-            roundedPanel14.ResumeLayout(false);
-            roundedPanel5.ResumeLayout(false);
-            roundedPanel5.PerformLayout();
-            roundedPanel13.ResumeLayout(false);
-            roundedPanel13.PerformLayout();
-            roundedPanel10.ResumeLayout(false);
-            roundedPanel10.PerformLayout();
-            roundedPanel7.ResumeLayout(false);
+            rpSignUpContainer_crtAcctSec.ResumeLayout(false);
+            rpCustomRadioContainer_crtAcctSec.ResumeLayout(false);
+            rpCustomRadioContainer_crtAcctSec.PerformLayout();
+            rpMaleRadioContainer_crtAcctSec.ResumeLayout(false);
+            rpMaleRadioContainer_crtAcctSec.PerformLayout();
+            rpFemaleRadioContainer_crtAcctSec.ResumeLayout(false);
+            rpFemaleRadioContainer_crtAcctSec.PerformLayout();
+            rpYearContainer_crtAcctSec.ResumeLayout(false);
             panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            roundedPanel3.ResumeLayout(false);
+            rpDayContainer_crtAcctSec.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            roundedPanel12.ResumeLayout(false);
-            roundedPanel12.PerformLayout();
-            roundedPanel4.ResumeLayout(false);
-            roundedPanel4.PerformLayout();
-            roundedPanel2.ResumeLayout(false);
-            roundedPanel2.PerformLayout();
-            roundedPanel1.ResumeLayout(false);
-            roundedPanel1.PerformLayout();
+            rpPasswordContainer_crtAcctSec.ResumeLayout(false);
+            rpPasswordContainer_crtAcctSec.PerformLayout();
+            rpEmailContainer_crtAcctSec.ResumeLayout(false);
+            rpEmailContainer_crtAcctSec.PerformLayout();
+            rpLastNameContainer_crtAcctSec.ResumeLayout(false);
+            rpLastNameContainer_crtAcctSec.PerformLayout();
+            rpFirstNameContainer_crtAcctSec.ResumeLayout(false);
+            rpFirstNameContainer_crtAcctSec.PerformLayout();
             rpBirthdayContainer_crtAcctSec.ResumeLayout(false);
             pnlDropdownContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picDrowdownLogo).EndInit();
@@ -1367,14 +1369,14 @@
         private TextBox txtEmailInput_wlcSec;
         private Panel createAccountPanel;
         private PictureBox pictureBox2;
-        private RoundedPanel roundedPanel5;
+        private RoundedPanel rpCustomRadioContainer_crtAcctSec;
         private RoundedPanel roundedPanel8;
         private RoundedPanel roundedPanel11;
-        private RoundedPanel roundedPanel10;
+        private RoundedPanel rpFemaleRadioContainer_crtAcctSec;
         private RoundedPanel roundedPanel9;
         private Label label7;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private RadioButton rdCustom_crtAcctSec;
+        private RadioButton rdFemale_crtAcctSec;
         private RadioButton radioButton3;
         private Label label9;
         private Label label8;
@@ -1418,15 +1420,15 @@
         private TextBox txtEmailInputSearch_fgtSec;
         private Label label1;
         private Label label11;
-        private RoundedPanel roundedPanel4;
+        private RoundedPanel rpEmailContainer_crtAcctSec;
         private Panel panel2;
         private PictureBox pictureBox3;
-        private ComboBox comboBox4;
+        private ComboBox cbbYear_crtAcctSec;
         private RoundedPanel rpCreateAccountContainer;
-        private RoundedPanel roundedPanel2;
-        private TextBox textBox2;
-        private RoundedPanel roundedPanel1;
-        private TextBox textBox1;
+        private RoundedPanel rpLastNameContainer_crtAcctSec;
+        private TextBox txtLastNameInput_crtAcctSec;
+        private RoundedPanel rpFirstNameContainer_crtAcctSec;
+        private TextBox txtFirstNameInput_crtAcctSec;
         private RoundedPanel rpBirthdayContainer_crtAcctSec;
         private Panel pnlDropdownContainer;
         private PictureBox picDrowdownLogo;
@@ -1438,20 +1440,20 @@
         private Label label5;
         private Label lblTagline_crtAcctSec;
         private Label lblCreateANewAccount;
-        private RoundedPanel roundedPanel12;
-        private TextBox textBox4;
+        private RoundedPanel rpPasswordContainer_crtAcctSec;
+        private TextBox txtPasswordInput_crtAcctSec;
         private Label label2;
-        private TextBox textBox3;
-        private RoundedPanel roundedPanel3;
+        private TextBox txtEmailInput_crtAcctSec;
+        private RoundedPanel rpDayContainer_crtAcctSec;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private ComboBox comboBox2;
-        private RoundedPanel roundedPanel7;
-        private RoundedPanel roundedPanel13;
+        private ComboBox cbbDay_crtAcctSec;
+        private RoundedPanel rpYearContainer_crtAcctSec;
+        private RoundedPanel rpMaleRadioContainer_crtAcctSec;
         private Label label6;
-        private RadioButton radioButton4;
-        private RoundedPanel roundedPanel14;
-        private Label label12;
+        private RadioButton rdMale_crtAcctSec;
+        private RoundedPanel rpSignUpContainer_crtAcctSec;
+        private Label lblSignUpContainer_crtAcctSec;
         private LinkLabel linkLabel1;
         private LinkLabel linkLabel4;
         private LinkLabel linkLabel3;
