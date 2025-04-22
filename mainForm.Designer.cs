@@ -45,43 +45,53 @@
             lblFacebookTagline = new Label();
             picFacebookLogo_wlcSec = new PictureBox();
             createAccountPanel = new Panel();
-            roundedPanel2 = new RoundedPanel();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            alreadyHaveAccountLabel = new Label();
+            rpCreateAccountContainer = new RoundedPanel();
+            lnkAlreadyHaveAnAccount = new LinkLabel();
+            linkLabel4 = new LinkLabel();
+            linkLabel3 = new LinkLabel();
+            linkLabel2 = new LinkLabel();
+            roundedPanel14 = new RoundedPanel();
+            label12 = new Label();
+            linkLabel1 = new LinkLabel();
+            roundedPanel5 = new RoundedPanel();
+            label7 = new Label();
+            radioButton1 = new RadioButton();
             roundedPanel13 = new RoundedPanel();
-            textBox4 = new TextBox();
-            roundedPanel6 = new RoundedPanel();
-            label4 = new Label();
-            roundedPanel12 = new RoundedPanel();
-            textBox3 = new TextBox();
-            roundedPanel11 = new RoundedPanel();
-            label10 = new Label();
-            radioButton3 = new RadioButton();
+            label6 = new Label();
+            radioButton4 = new RadioButton();
             roundedPanel10 = new RoundedPanel();
             label9 = new Label();
             radioButton2 = new RadioButton();
-            roundedPanel9 = new RoundedPanel();
-            label8 = new Label();
-            radioButton1 = new RadioButton();
-            label7 = new Label();
             roundedPanel7 = new RoundedPanel();
-            comboBox2 = new ComboBox();
-            roundedPanel8 = new RoundedPanel();
-            comboBox3 = new ComboBox();
-            roundedPanel5 = new RoundedPanel();
-            comboBox1 = new ComboBox();
-            label5 = new Label();
-            roundedPanel4 = new RoundedPanel();
-            textBox2 = new TextBox();
-            label6 = new Label();
+            panel2 = new Panel();
+            pictureBox3 = new PictureBox();
+            comboBox4 = new ComboBox();
             roundedPanel3 = new RoundedPanel();
-            textBox1 = new TextBox();
-            label3 = new Label();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            comboBox2 = new ComboBox();
+            roundedPanel12 = new RoundedPanel();
+            textBox4 = new TextBox();
             label2 = new Label();
+            roundedPanel4 = new RoundedPanel();
+            textBox3 = new TextBox();
+            roundedPanel2 = new RoundedPanel();
+            textBox2 = new TextBox();
+            roundedPanel1 = new RoundedPanel();
+            textBox1 = new TextBox();
+            rpBirthdayContainer_crtAcctSec = new RoundedPanel();
+            pnlDropdownContainer = new Panel();
+            picDrowdownLogo = new PictureBox();
+            cbbBirthday_crtAcctSec = new ComboBox();
+            label3 = new Label();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            label5 = new Label();
+            lblTagline_crtAcctSec = new Label();
+            lblCreateANewAccount = new Label();
             pictureBox2 = new PictureBox();
             forgotPasswordPanel = new Panel();
-            panel1 = new Panel();
+            pnlFooter_fgtSec = new Panel();
             pnlNavBar = new Panel();
             lnkForgotPassword_fgtSec = new LinkLabel();
             rpLoginContainer_fgtSec = new RoundedPanel();
@@ -98,12 +108,12 @@
             lblCancel_fgtSec = new Label();
             rpEmailContainerSearch_fgtSec = new RoundedPanel();
             txtEmailInputSearch_fgtSec = new TextBox();
-            lblTitle = new Label();
+            lblFindYourAccount = new Label();
             lblInstruction = new Label();
             rpSearchContainer_fgtSec = new RoundedPanel();
             lblSearch_fgtSec = new Label();
             pnlLoginSection = new Panel();
-            pnlFooter = new Panel();
+            pnlFooter_lgnSec = new Panel();
             rpLoginBox = new RoundedPanel();
             lblLoginIntoFb = new Label();
             lnkSignupForFb = new LinkLabel();
@@ -124,18 +134,24 @@
             pnlFacebookHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_wlcSec).BeginInit();
             createAccountPanel.SuspendLayout();
-            roundedPanel2.SuspendLayout();
-            roundedPanel13.SuspendLayout();
-            roundedPanel6.SuspendLayout();
-            roundedPanel12.SuspendLayout();
-            roundedPanel11.SuspendLayout();
-            roundedPanel10.SuspendLayout();
-            roundedPanel9.SuspendLayout();
-            roundedPanel7.SuspendLayout();
-            roundedPanel8.SuspendLayout();
+            rpCreateAccountContainer.SuspendLayout();
+            roundedPanel14.SuspendLayout();
             roundedPanel5.SuspendLayout();
-            roundedPanel4.SuspendLayout();
+            roundedPanel13.SuspendLayout();
+            roundedPanel10.SuspendLayout();
+            roundedPanel7.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             roundedPanel3.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            roundedPanel12.SuspendLayout();
+            roundedPanel4.SuspendLayout();
+            roundedPanel2.SuspendLayout();
+            roundedPanel1.SuspendLayout();
+            rpBirthdayContainer_crtAcctSec.SuspendLayout();
+            pnlDropdownContainer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picDrowdownLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             forgotPasswordPanel.SuspendLayout();
             pnlNavBar.SuspendLayout();
@@ -325,7 +341,8 @@
             // 
             // createAccountPanel
             // 
-            createAccountPanel.Controls.Add(roundedPanel2);
+            createAccountPanel.AutoScroll = true;
+            createAccountPanel.Controls.Add(rpCreateAccountContainer);
             createAccountPanel.Controls.Add(pictureBox2);
             createAccountPanel.Dock = DockStyle.Fill;
             createAccountPanel.Location = new Point(0, 0);
@@ -333,167 +350,194 @@
             createAccountPanel.Size = new Size(1599, 798);
             createAccountPanel.TabIndex = 4;
             // 
-            // roundedPanel2
+            // rpCreateAccountContainer
             // 
-            roundedPanel2.BackColor = Color.White;
-            roundedPanel2.BorderColor = Color.Gray;
-            roundedPanel2.Controls.Add(textBox5);
-            roundedPanel2.Controls.Add(textBox6);
-            roundedPanel2.Controls.Add(alreadyHaveAccountLabel);
-            roundedPanel2.Controls.Add(roundedPanel13);
-            roundedPanel2.Controls.Add(roundedPanel6);
-            roundedPanel2.Controls.Add(roundedPanel12);
-            roundedPanel2.Controls.Add(roundedPanel11);
-            roundedPanel2.Controls.Add(roundedPanel10);
-            roundedPanel2.Controls.Add(roundedPanel9);
-            roundedPanel2.Controls.Add(label7);
-            roundedPanel2.Controls.Add(roundedPanel7);
-            roundedPanel2.Controls.Add(roundedPanel8);
-            roundedPanel2.Controls.Add(roundedPanel5);
-            roundedPanel2.Controls.Add(label5);
-            roundedPanel2.Controls.Add(roundedPanel4);
-            roundedPanel2.Controls.Add(label6);
-            roundedPanel2.Controls.Add(roundedPanel3);
-            roundedPanel2.Controls.Add(label3);
-            roundedPanel2.Controls.Add(label2);
-            roundedPanel2.Location = new Point(465, 91);
-            roundedPanel2.Name = "roundedPanel2";
-            roundedPanel2.Size = new Size(543, 666);
-            roundedPanel2.TabIndex = 3;
+            rpCreateAccountContainer.AutoSize = true;
+            rpCreateAccountContainer.BackColor = Color.White;
+            rpCreateAccountContainer.BorderColor = Color.Gray;
+            rpCreateAccountContainer.Controls.Add(lnkAlreadyHaveAnAccount);
+            rpCreateAccountContainer.Controls.Add(linkLabel4);
+            rpCreateAccountContainer.Controls.Add(linkLabel3);
+            rpCreateAccountContainer.Controls.Add(linkLabel2);
+            rpCreateAccountContainer.Controls.Add(roundedPanel14);
+            rpCreateAccountContainer.Controls.Add(linkLabel1);
+            rpCreateAccountContainer.Controls.Add(roundedPanel5);
+            rpCreateAccountContainer.Controls.Add(roundedPanel13);
+            rpCreateAccountContainer.Controls.Add(roundedPanel10);
+            rpCreateAccountContainer.Controls.Add(roundedPanel7);
+            rpCreateAccountContainer.Controls.Add(roundedPanel3);
+            rpCreateAccountContainer.Controls.Add(roundedPanel12);
+            rpCreateAccountContainer.Controls.Add(label2);
+            rpCreateAccountContainer.Controls.Add(roundedPanel4);
+            rpCreateAccountContainer.Controls.Add(roundedPanel2);
+            rpCreateAccountContainer.Controls.Add(roundedPanel1);
+            rpCreateAccountContainer.Controls.Add(rpBirthdayContainer_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(label3);
+            rpCreateAccountContainer.Controls.Add(textBox5);
+            rpCreateAccountContainer.Controls.Add(textBox6);
+            rpCreateAccountContainer.Controls.Add(label5);
+            rpCreateAccountContainer.Controls.Add(lblTagline_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(lblCreateANewAccount);
+            rpCreateAccountContainer.CornerRadius = 7;
+            rpCreateAccountContainer.Location = new Point(543, 139);
+            rpCreateAccountContainer.Name = "rpCreateAccountContainer";
+            rpCreateAccountContainer.Size = new Size(534, 750);
+            rpCreateAccountContainer.TabIndex = 3;
             // 
-            // textBox5
+            // lnkAlreadyHaveAnAccount
             // 
-            textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox5.ForeColor = SystemColors.ControlDarkDark;
-            textBox5.Location = new Point(22, 503);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.PlaceholderText = "Mobile Number or email";
-            textBox5.Size = new Size(500, 44);
-            textBox5.TabIndex = 9;
-            textBox5.Text = "By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.";
+            lnkAlreadyHaveAnAccount.AutoSize = true;
+            lnkAlreadyHaveAnAccount.Cursor = Cursors.Hand;
+            lnkAlreadyHaveAnAccount.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lnkAlreadyHaveAnAccount.LinkBehavior = LinkBehavior.NeverUnderline;
+            lnkAlreadyHaveAnAccount.LinkColor = Color.FromArgb(35, 125, 242);
+            lnkAlreadyHaveAnAccount.Location = new Point(152, 702);
+            lnkAlreadyHaveAnAccount.Name = "lnkAlreadyHaveAnAccount";
+            lnkAlreadyHaveAnAccount.Size = new Size(236, 23);
+            lnkAlreadyHaveAnAccount.TabIndex = 19;
+            lnkAlreadyHaveAnAccount.TabStop = true;
+            lnkAlreadyHaveAnAccount.Text = "Already have an account?";
             // 
-            // textBox6
+            // linkLabel4
             // 
-            textBox6.BorderStyle = BorderStyle.None;
-            textBox6.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox6.ForeColor = SystemColors.ControlDarkDark;
-            textBox6.Location = new Point(22, 453);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.PlaceholderText = "Mobile Number or email";
-            textBox6.Size = new Size(500, 44);
-            textBox6.TabIndex = 1;
-            textBox6.Text = "People who use our service may have uploaded your contact information to Facebook. Learn more.";
+            linkLabel4.AutoSize = true;
+            linkLabel4.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel4.LinkBehavior = LinkBehavior.HoverUnderline;
+            linkLabel4.LinkColor = Color.FromArgb(23, 102, 255);
+            linkLabel4.Location = new Point(370, 558);
+            linkLabel4.Name = "linkLabel4";
+            linkLabel4.Size = new Size(93, 20);
+            linkLabel4.TabIndex = 18;
+            linkLabel4.TabStop = true;
+            linkLabel4.Text = "Cookies Policy,";
             // 
-            // alreadyHaveAccountLabel
+            // linkLabel3
             // 
-            alreadyHaveAccountLabel.AutoSize = true;
-            alreadyHaveAccountLabel.ForeColor = SystemColors.Highlight;
-            alreadyHaveAccountLabel.Location = new Point(153, 625);
-            alreadyHaveAccountLabel.Name = "alreadyHaveAccountLabel";
-            alreadyHaveAccountLabel.Size = new Size(225, 19);
-            alreadyHaveAccountLabel.TabIndex = 0;
-            alreadyHaveAccountLabel.Text = "Already have an account?";
+            linkLabel3.AutoSize = true;
+            linkLabel3.BackColor = Color.Transparent;
+            linkLabel3.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel3.LinkBehavior = LinkBehavior.HoverUnderline;
+            linkLabel3.LinkColor = Color.FromArgb(23, 102, 255);
+            linkLabel3.Location = new Point(271, 558);
+            linkLabel3.Name = "linkLabel3";
+            linkLabel3.Size = new Size(87, 20);
+            linkLabel3.TabIndex = 17;
+            linkLabel3.TabStop = true;
+            linkLabel3.Text = "Privacy Policy,";
+            // 
+            // linkLabel2
+            // 
+            linkLabel2.AutoSize = true;
+            linkLabel2.BackColor = Color.Transparent;
+            linkLabel2.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel2.LinkBehavior = LinkBehavior.HoverUnderline;
+            linkLabel2.LinkColor = Color.FromArgb(23, 102, 255);
+            linkLabel2.Location = new Point(225, 558);
+            linkLabel2.Name = "linkLabel2";
+            linkLabel2.Size = new Size(49, 20);
+            linkLabel2.TabIndex = 16;
+            linkLabel2.TabStop = true;
+            linkLabel2.Text = "Terms,";
+            // 
+            // roundedPanel14
+            // 
+            roundedPanel14.BackColor = Color.FromArgb(153, 54, 164, 32);
+            roundedPanel14.BorderColor = Color.Gray;
+            roundedPanel14.Controls.Add(label12);
+            roundedPanel14.CornerRadius = 5;
+            roundedPanel14.Location = new Point(148, 631);
+            roundedPanel14.Name = "roundedPanel14";
+            roundedPanel14.Size = new Size(240, 46);
+            roundedPanel14.TabIndex = 15;
+            // 
+            // label12
+            // 
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(-2, -1);
+            label12.Name = "label12";
+            label12.Size = new Size(242, 47);
+            label12.TabIndex = 0;
+            label12.Text = "Sign Up";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.LinkBehavior = LinkBehavior.HoverUnderline;
+            linkLabel1.LinkColor = Color.FromArgb(23, 102, 255);
+            linkLabel1.Location = new Point(85, 528);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(76, 20);
+            linkLabel1.TabIndex = 14;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Learn more.";
+            // 
+            // roundedPanel5
+            // 
+            roundedPanel5.BackColor = Color.Transparent;
+            roundedPanel5.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel5.BorderThickness = 1;
+            roundedPanel5.Controls.Add(label7);
+            roundedPanel5.Controls.Add(radioButton1);
+            roundedPanel5.CornerRadius = 5;
+            roundedPanel5.Location = new Point(354, 300);
+            roundedPanel5.Name = "roundedPanel5";
+            roundedPanel5.Size = new Size(151, 44);
+            roundedPanel5.TabIndex = 13;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(11, 13);
+            label7.Name = "label7";
+            label7.Size = new Size(45, 19);
+            label7.TabIndex = 2;
+            label7.Text = "Male";
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(124, 14);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(17, 16);
+            radioButton1.TabIndex = 1;
+            radioButton1.TabStop = true;
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // roundedPanel13
             // 
             roundedPanel13.BackColor = Color.Transparent;
             roundedPanel13.BorderColor = Color.FromArgb(221, 223, 226);
             roundedPanel13.BorderThickness = 1;
-            roundedPanel13.Controls.Add(textBox4);
-            roundedPanel13.CornerRadius = 8;
-            roundedPanel13.Location = new Point(22, 387);
+            roundedPanel13.Controls.Add(label6);
+            roundedPanel13.Controls.Add(radioButton4);
+            roundedPanel13.CornerRadius = 5;
+            roundedPanel13.Location = new Point(188, 300);
             roundedPanel13.Name = "roundedPanel13";
-            roundedPanel13.Size = new Size(500, 49);
-            roundedPanel13.TabIndex = 6;
+            roundedPanel13.Size = new Size(151, 44);
+            roundedPanel13.TabIndex = 12;
             // 
-            // textBox4
+            // label6
             // 
-            textBox4.BorderStyle = BorderStyle.None;
-            textBox4.Location = new Point(9, 13);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "Password";
-            textBox4.Size = new Size(487, 20);
-            textBox4.TabIndex = 0;
+            label6.AutoSize = true;
+            label6.Location = new Point(11, 13);
+            label6.Name = "label6";
+            label6.Size = new Size(45, 19);
+            label6.TabIndex = 2;
+            label6.Text = "Male";
             // 
-            // roundedPanel6
+            // radioButton4
             // 
-            roundedPanel6.BackColor = Color.FromArgb(153, 54, 164, 32);
-            roundedPanel6.BorderColor = Color.Gray;
-            roundedPanel6.Controls.Add(label4);
-            roundedPanel6.CornerRadius = 8;
-            roundedPanel6.Location = new Point(136, 569);
-            roundedPanel6.Name = "roundedPanel6";
-            roundedPanel6.Size = new Size(236, 40);
-            roundedPanel6.TabIndex = 0;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(64, 7);
-            label4.Name = "label4";
-            label4.Size = new Size(89, 25);
-            label4.TabIndex = 0;
-            label4.Text = "Sign Up";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // roundedPanel12
-            // 
-            roundedPanel12.BackColor = Color.Transparent;
-            roundedPanel12.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel12.BorderThickness = 1;
-            roundedPanel12.Controls.Add(textBox3);
-            roundedPanel12.CornerRadius = 8;
-            roundedPanel12.Location = new Point(22, 328);
-            roundedPanel12.Name = "roundedPanel12";
-            roundedPanel12.Size = new Size(500, 49);
-            roundedPanel12.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Location = new Point(9, 13);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Mobile Number or email";
-            textBox3.Size = new Size(487, 20);
-            textBox3.TabIndex = 0;
-            // 
-            // roundedPanel11
-            // 
-            roundedPanel11.BackColor = Color.Transparent;
-            roundedPanel11.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel11.BorderThickness = 1;
-            roundedPanel11.Controls.Add(label10);
-            roundedPanel11.Controls.Add(radioButton3);
-            roundedPanel11.CornerRadius = 8;
-            roundedPanel11.Location = new Point(360, 269);
-            roundedPanel11.Name = "roundedPanel11";
-            roundedPanel11.Size = new Size(162, 49);
-            roundedPanel11.TabIndex = 8;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(14, 17);
-            label10.Name = "label10";
-            label10.Size = new Size(63, 19);
-            label10.TabIndex = 3;
-            label10.Text = "Custom";
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(127, 19);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(17, 16);
-            radioButton3.TabIndex = 2;
-            radioButton3.TabStop = true;
-            radioButton3.UseVisualStyleBackColor = true;
+            radioButton4.AutoSize = true;
+            radioButton4.Location = new Point(124, 14);
+            radioButton4.Name = "radioButton4";
+            radioButton4.Size = new Size(17, 16);
+            radioButton4.TabIndex = 1;
+            radioButton4.TabStop = true;
+            radioButton4.UseVisualStyleBackColor = true;
             // 
             // roundedPanel10
             // 
@@ -502,16 +546,16 @@
             roundedPanel10.BorderThickness = 1;
             roundedPanel10.Controls.Add(label9);
             roundedPanel10.Controls.Add(radioButton2);
-            roundedPanel10.CornerRadius = 8;
-            roundedPanel10.Location = new Point(191, 269);
+            roundedPanel10.CornerRadius = 5;
+            roundedPanel10.Location = new Point(22, 300);
             roundedPanel10.Name = "roundedPanel10";
-            roundedPanel10.Size = new Size(162, 49);
-            roundedPanel10.TabIndex = 7;
+            roundedPanel10.Size = new Size(151, 44);
+            roundedPanel10.TabIndex = 11;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(9, 17);
+            label9.Location = new Point(11, 13);
             label9.Name = "label9";
             label9.Size = new Size(45, 19);
             label9.TabIndex = 2;
@@ -520,218 +564,320 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(128, 19);
+            radioButton2.Location = new Point(124, 14);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(17, 16);
             radioButton2.TabIndex = 1;
             radioButton2.TabStop = true;
             radioButton2.UseVisualStyleBackColor = true;
             // 
-            // roundedPanel9
-            // 
-            roundedPanel9.BackColor = Color.Transparent;
-            roundedPanel9.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel9.BorderThickness = 1;
-            roundedPanel9.Controls.Add(label8);
-            roundedPanel9.Controls.Add(radioButton1);
-            roundedPanel9.CornerRadius = 8;
-            roundedPanel9.Location = new Point(22, 269);
-            roundedPanel9.Name = "roundedPanel9";
-            roundedPanel9.Size = new Size(162, 49);
-            roundedPanel9.TabIndex = 6;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(9, 17);
-            label8.Name = "label8";
-            label8.Size = new Size(63, 19);
-            label8.TabIndex = 1;
-            label8.Text = "Female";
-            // 
-            // radioButton1
-            // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(130, 19);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(17, 16);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.ForeColor = SystemColors.ControlDarkDark;
-            label7.Location = new Point(22, 247);
-            label7.Name = "label7";
-            label7.Size = new Size(63, 19);
-            label7.TabIndex = 7;
-            label7.Text = "Gender";
-            label7.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // roundedPanel7
             // 
             roundedPanel7.BackColor = Color.Transparent;
             roundedPanel7.BorderColor = Color.FromArgb(221, 223, 226);
             roundedPanel7.BorderThickness = 1;
-            roundedPanel7.Controls.Add(comboBox2);
-            roundedPanel7.CornerRadius = 8;
-            roundedPanel7.Location = new Point(191, 181);
+            roundedPanel7.Controls.Add(panel2);
+            roundedPanel7.Controls.Add(comboBox4);
+            roundedPanel7.CornerRadius = 5;
+            roundedPanel7.Location = new Point(354, 215);
             roundedPanel7.Name = "roundedPanel7";
-            roundedPanel7.Size = new Size(162, 49);
-            roundedPanel7.TabIndex = 6;
+            roundedPanel7.Size = new Size(151, 44);
+            roundedPanel7.TabIndex = 12;
             // 
-            // comboBox2
+            // panel2
             // 
-            comboBox2.FlatStyle = FlatStyle.Flat;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(9, 11);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(140, 27);
-            comboBox2.TabIndex = 5;
+            panel2.Controls.Add(pictureBox3);
+            panel2.Location = new Point(120, 2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(31, 39);
+            panel2.TabIndex = 6;
             // 
-            // roundedPanel8
+            // pictureBox3
             // 
-            roundedPanel8.BackColor = Color.Transparent;
-            roundedPanel8.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel8.BorderThickness = 1;
-            roundedPanel8.Controls.Add(comboBox3);
-            roundedPanel8.CornerRadius = 8;
-            roundedPanel8.Location = new Point(360, 181);
-            roundedPanel8.Name = "roundedPanel8";
-            roundedPanel8.Size = new Size(162, 49);
-            roundedPanel8.TabIndex = 6;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(6, 11);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(18, 18);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 6;
+            pictureBox3.TabStop = false;
             // 
-            // comboBox3
+            // comboBox4
             // 
-            comboBox3.FlatStyle = FlatStyle.Flat;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(6, 11);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(140, 27);
-            comboBox3.TabIndex = 6;
-            // 
-            // roundedPanel5
-            // 
-            roundedPanel5.BackColor = Color.Transparent;
-            roundedPanel5.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel5.BorderThickness = 1;
-            roundedPanel5.Controls.Add(comboBox1);
-            roundedPanel5.CornerRadius = 8;
-            roundedPanel5.Location = new Point(22, 181);
-            roundedPanel5.Name = "roundedPanel5";
-            roundedPanel5.Size = new Size(162, 49);
-            roundedPanel5.TabIndex = 5;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(9, 11);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(140, 27);
-            comboBox1.TabIndex = 4;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = SystemColors.ControlDarkDark;
-            label5.Location = new Point(22, 155);
-            label5.Name = "label5";
-            label5.Size = new Size(81, 19);
-            label5.TabIndex = 5;
-            label5.Text = "Birthday";
-            label5.TextAlign = ContentAlignment.MiddleLeft;
-            // 
-            // roundedPanel4
-            // 
-            roundedPanel4.BackColor = Color.Transparent;
-            roundedPanel4.BorderColor = Color.FromArgb(221, 223, 226);
-            roundedPanel4.BorderThickness = 1;
-            roundedPanel4.Controls.Add(textBox2);
-            roundedPanel4.CornerRadius = 8;
-            roundedPanel4.Location = new Point(277, 91);
-            roundedPanel4.Name = "roundedPanel4";
-            roundedPanel4.Size = new Size(245, 49);
-            roundedPanel4.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Location = new Point(15, 13);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '●';
-            textBox2.PlaceholderText = "Last Name";
-            textBox2.Size = new Size(215, 20);
-            textBox2.TabIndex = 0;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.ForeColor = SystemColors.ControlDarkDark;
-            label6.Location = new Point(191, 48);
-            label6.Name = "label6";
-            label6.Size = new Size(189, 19);
-            label6.TabIndex = 6;
-            label6.Text = "It's quick and easy.";
+            comboBox4.BackColor = Color.White;
+            comboBox4.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox4.FlatStyle = FlatStyle.Flat;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Items.AddRange(new object[] { "April", "August", "December", "February", "January", "July", "June", "March", "May", "November", "October", "September" });
+            comboBox4.Location = new Point(16, 8);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(135, 27);
+            comboBox4.TabIndex = 10;
             // 
             // roundedPanel3
             // 
             roundedPanel3.BackColor = Color.Transparent;
             roundedPanel3.BorderColor = Color.FromArgb(221, 223, 226);
             roundedPanel3.BorderThickness = 1;
-            roundedPanel3.Controls.Add(textBox1);
-            roundedPanel3.CornerRadius = 8;
-            roundedPanel3.Location = new Point(22, 91);
+            roundedPanel3.Controls.Add(panel1);
+            roundedPanel3.Controls.Add(comboBox2);
+            roundedPanel3.CornerRadius = 5;
+            roundedPanel3.Location = new Point(188, 215);
             roundedPanel3.Name = "roundedPanel3";
-            roundedPanel3.Size = new Size(245, 49);
-            roundedPanel3.TabIndex = 4;
+            roundedPanel3.Size = new Size(151, 44);
+            roundedPanel3.TabIndex = 11;
             // 
-            // textBox1
+            // panel1
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Location = new Point(9, 13);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "First Name";
-            textBox1.Size = new Size(183, 20);
-            textBox1.TabIndex = 0;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Location = new Point(120, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(31, 39);
+            panel1.TabIndex = 6;
             // 
-            // label3
+            // pictureBox1
             // 
-            label3.BackColor = Color.FromArgb(218, 221, 225);
-            label3.BorderStyle = BorderStyle.Fixed3D;
-            label3.ForeColor = SystemColors.ControlDarkDark;
-            label3.Location = new Point(3, 77);
-            label3.Name = "label3";
-            label3.Size = new Size(542, 1);
-            label3.TabIndex = 3;
-            label3.Text = "label3";
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(6, 11);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(18, 18);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // comboBox2
+            // 
+            comboBox2.BackColor = Color.White;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FlatStyle = FlatStyle.Flat;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "April", "August", "December", "February", "January", "July", "June", "March", "May", "November", "October", "September" });
+            comboBox2.Location = new Point(16, 8);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(135, 27);
+            comboBox2.TabIndex = 10;
+            // 
+            // roundedPanel12
+            // 
+            roundedPanel12.BackColor = Color.Transparent;
+            roundedPanel12.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel12.BorderThickness = 1;
+            roundedPanel12.Controls.Add(textBox4);
+            roundedPanel12.CornerRadius = 5;
+            roundedPanel12.Location = new Point(21, 425);
+            roundedPanel12.Name = "roundedPanel12";
+            roundedPanel12.Size = new Size(484, 52);
+            roundedPanel12.TabIndex = 13;
+            // 
+            // textBox4
+            // 
+            textBox4.BorderStyle = BorderStyle.None;
+            textBox4.Location = new Point(17, 13);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "First name";
+            textBox4.Size = new Size(199, 20);
+            textBox4.TabIndex = 0;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(89, 9);
+            label2.Font = new Font("Segoe UI Semilight", 7.50000048F);
+            label2.ForeColor = Color.FromArgb(107, 113, 122);
+            label2.Location = new Point(21, 270);
             label2.Name = "label2";
-            label2.Size = new Size(397, 37);
-            label2.TabIndex = 6;
-            label2.Text = "Create a new account";
+            label2.Size = new Size(53, 17);
+            label2.TabIndex = 13;
+            label2.Text = "Birthday";
+            label2.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // roundedPanel4
+            // 
+            roundedPanel4.BackColor = Color.Transparent;
+            roundedPanel4.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel4.BorderThickness = 1;
+            roundedPanel4.Controls.Add(textBox3);
+            roundedPanel4.CornerRadius = 5;
+            roundedPanel4.Location = new Point(21, 359);
+            roundedPanel4.Name = "roundedPanel4";
+            roundedPanel4.Size = new Size(484, 52);
+            roundedPanel4.TabIndex = 12;
+            // 
+            // textBox3
+            // 
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Location = new Point(17, 13);
+            textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "First name";
+            textBox3.Size = new Size(199, 20);
+            textBox3.TabIndex = 0;
+            // 
+            // roundedPanel2
+            // 
+            roundedPanel2.BackColor = Color.Transparent;
+            roundedPanel2.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel2.BorderThickness = 1;
+            roundedPanel2.Controls.Add(textBox2);
+            roundedPanel2.CornerRadius = 5;
+            roundedPanel2.Location = new Point(271, 117);
+            roundedPanel2.Name = "roundedPanel2";
+            roundedPanel2.Size = new Size(234, 52);
+            roundedPanel2.TabIndex = 12;
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.Location = new Point(17, 13);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "Last name";
+            textBox2.Size = new Size(199, 20);
+            textBox2.TabIndex = 0;
+            // 
+            // roundedPanel1
+            // 
+            roundedPanel1.BackColor = Color.Transparent;
+            roundedPanel1.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel1.BorderThickness = 1;
+            roundedPanel1.Controls.Add(textBox1);
+            roundedPanel1.CornerRadius = 5;
+            roundedPanel1.Location = new Point(22, 117);
+            roundedPanel1.Name = "roundedPanel1";
+            roundedPanel1.Size = new Size(234, 52);
+            roundedPanel1.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Location = new Point(17, 13);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "First name";
+            textBox1.Size = new Size(199, 20);
+            textBox1.TabIndex = 0;
+            // 
+            // rpBirthdayContainer_crtAcctSec
+            // 
+            rpBirthdayContainer_crtAcctSec.BackColor = Color.Transparent;
+            rpBirthdayContainer_crtAcctSec.BorderColor = Color.FromArgb(221, 223, 226);
+            rpBirthdayContainer_crtAcctSec.BorderThickness = 1;
+            rpBirthdayContainer_crtAcctSec.Controls.Add(pnlDropdownContainer);
+            rpBirthdayContainer_crtAcctSec.Controls.Add(cbbBirthday_crtAcctSec);
+            rpBirthdayContainer_crtAcctSec.CornerRadius = 5;
+            rpBirthdayContainer_crtAcctSec.Location = new Point(22, 215);
+            rpBirthdayContainer_crtAcctSec.Name = "rpBirthdayContainer_crtAcctSec";
+            rpBirthdayContainer_crtAcctSec.Size = new Size(151, 44);
+            rpBirthdayContainer_crtAcctSec.TabIndex = 6;
+            // 
+            // pnlDropdownContainer
+            // 
+            pnlDropdownContainer.Controls.Add(picDrowdownLogo);
+            pnlDropdownContainer.Location = new Point(120, 2);
+            pnlDropdownContainer.Name = "pnlDropdownContainer";
+            pnlDropdownContainer.Size = new Size(31, 39);
+            pnlDropdownContainer.TabIndex = 6;
+            // 
+            // picDrowdownLogo
+            // 
+            picDrowdownLogo.Image = (Image)resources.GetObject("picDrowdownLogo.Image");
+            picDrowdownLogo.Location = new Point(6, 11);
+            picDrowdownLogo.Name = "picDrowdownLogo";
+            picDrowdownLogo.Size = new Size(18, 18);
+            picDrowdownLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+            picDrowdownLogo.TabIndex = 6;
+            picDrowdownLogo.TabStop = false;
+            // 
+            // cbbBirthday_crtAcctSec
+            // 
+            cbbBirthday_crtAcctSec.BackColor = Color.White;
+            cbbBirthday_crtAcctSec.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbBirthday_crtAcctSec.FlatStyle = FlatStyle.Flat;
+            cbbBirthday_crtAcctSec.FormattingEnabled = true;
+            cbbBirthday_crtAcctSec.Items.AddRange(new object[] { "April", "August", "December", "February", "January", "July", "June", "March", "May", "November", "October", "September" });
+            cbbBirthday_crtAcctSec.Location = new Point(16, 8);
+            cbbBirthday_crtAcctSec.Name = "cbbBirthday_crtAcctSec";
+            cbbBirthday_crtAcctSec.Size = new Size(135, 27);
+            cbbBirthday_crtAcctSec.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.BackColor = Color.FromArgb(218, 221, 225);
+            label3.ForeColor = Color.FromArgb(218, 221, 225);
+            label3.Location = new Point(0, 95);
+            label3.Name = "label3";
+            label3.Size = new Size(521, 1);
+            label3.TabIndex = 10;
+            label3.Text = "label1";
+            // 
+            // textBox5
+            // 
+            textBox5.BorderStyle = BorderStyle.None;
+            textBox5.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox5.ForeColor = SystemColors.ControlDarkDark;
+            textBox5.Location = new Point(22, 558);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.PlaceholderText = "Mobile Number or email";
+            textBox5.Size = new Size(507, 46);
+            textBox5.TabIndex = 9;
+            textBox5.Text = "By clicking Sign Up, you agree to our Terms, Privacy Policy   and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.";
+            // 
+            // textBox6
+            // 
+            textBox6.BorderStyle = BorderStyle.None;
+            textBox6.Font = new Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox6.ForeColor = SystemColors.ControlDarkDark;
+            textBox6.Location = new Point(22, 508);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.PlaceholderText = "Mobile Number or email";
+            textBox6.Size = new Size(465, 44);
+            textBox6.TabIndex = 1;
+            textBox6.Text = "People who use our service may have uploaded your contact information to Facebook.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semilight", 7.50000048F);
+            label5.ForeColor = Color.FromArgb(107, 113, 122);
+            label5.Location = new Point(21, 188);
+            label5.Name = "label5";
+            label5.Size = new Size(53, 17);
+            label5.TabIndex = 5;
+            label5.Text = "Birthday";
+            label5.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lblTagline_crtAcctSec
+            // 
+            lblTagline_crtAcctSec.AutoSize = true;
+            lblTagline_crtAcctSec.ForeColor = SystemColors.ControlDarkDark;
+            lblTagline_crtAcctSec.Location = new Point(183, 56);
+            lblTagline_crtAcctSec.Name = "lblTagline_crtAcctSec";
+            lblTagline_crtAcctSec.Size = new Size(189, 19);
+            lblTagline_crtAcctSec.TabIndex = 6;
+            lblTagline_crtAcctSec.Text = "It's quick and easy.";
+            // 
+            // lblCreateANewAccount
+            // 
+            lblCreateANewAccount.AutoSize = true;
+            lblCreateANewAccount.Font = new Font("Segoe UI Black", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCreateANewAccount.Location = new Point(122, 15);
+            lblCreateANewAccount.Name = "lblCreateANewAccount";
+            lblCreateANewAccount.Size = new Size(315, 38);
+            lblCreateANewAccount.TabIndex = 6;
+            lblCreateANewAccount.Text = "Create a new account";
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(536, -42);
+            pictureBox2.Location = new Point(634, 3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(395, 157);
+            pictureBox2.Size = new Size(375, 131);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
             // forgotPasswordPanel
             // 
-            forgotPasswordPanel.Controls.Add(panel1);
+            forgotPasswordPanel.Controls.Add(pnlFooter_fgtSec);
             forgotPasswordPanel.Controls.Add(pnlNavBar);
             forgotPasswordPanel.Controls.Add(rpForgotPasswordBox);
             forgotPasswordPanel.Dock = DockStyle.Fill;
@@ -740,13 +886,13 @@
             forgotPasswordPanel.Size = new Size(1599, 798);
             forgotPasswordPanel.TabIndex = 4;
             // 
-            // panel1
+            // pnlFooter_fgtSec
             // 
-            panel1.BackColor = Color.White;
-            panel1.Location = new Point(0, 576);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1596, 222);
-            panel1.TabIndex = 4;
+            pnlFooter_fgtSec.BackColor = Color.White;
+            pnlFooter_fgtSec.Location = new Point(0, 576);
+            pnlFooter_fgtSec.Name = "pnlFooter_fgtSec";
+            pnlFooter_fgtSec.Size = new Size(1596, 222);
+            pnlFooter_fgtSec.TabIndex = 4;
             // 
             // pnlNavBar
             // 
@@ -859,7 +1005,7 @@
             rpForgotPasswordBox.Controls.Add(label1);
             rpForgotPasswordBox.Controls.Add(rpCancelContainer_fgtSec);
             rpForgotPasswordBox.Controls.Add(rpEmailContainerSearch_fgtSec);
-            rpForgotPasswordBox.Controls.Add(lblTitle);
+            rpForgotPasswordBox.Controls.Add(lblFindYourAccount);
             rpForgotPasswordBox.Controls.Add(lblInstruction);
             rpForgotPasswordBox.Controls.Add(rpSearchContainer_fgtSec);
             rpForgotPasswordBox.CornerRadius = 7;
@@ -932,15 +1078,15 @@
             txtEmailInputSearch_fgtSec.Size = new Size(501, 20);
             txtEmailInputSearch_fgtSec.TabIndex = 0;
             // 
-            // lblTitle
+            // lblFindYourAccount
             // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI Semilight", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblTitle.Location = new Point(15, 18);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(194, 31);
-            lblTitle.TabIndex = 3;
-            lblTitle.Text = "Find your Account";
+            lblFindYourAccount.AutoSize = true;
+            lblFindYourAccount.Font = new Font("Segoe UI Semilight", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblFindYourAccount.Location = new Point(15, 18);
+            lblFindYourAccount.Name = "lblFindYourAccount";
+            lblFindYourAccount.Size = new Size(194, 31);
+            lblFindYourAccount.TabIndex = 3;
+            lblFindYourAccount.Text = "Find your Account";
             // 
             // lblInstruction
             // 
@@ -975,7 +1121,7 @@
             // 
             // pnlLoginSection
             // 
-            pnlLoginSection.Controls.Add(pnlFooter);
+            pnlLoginSection.Controls.Add(pnlFooter_lgnSec);
             pnlLoginSection.Controls.Add(rpLoginBox);
             pnlLoginSection.Controls.Add(picFacebookLogo_lgnSec);
             pnlLoginSection.Dock = DockStyle.Fill;
@@ -984,13 +1130,13 @@
             pnlLoginSection.Size = new Size(1599, 798);
             pnlLoginSection.TabIndex = 3;
             // 
-            // pnlFooter
+            // pnlFooter_lgnSec
             // 
-            pnlFooter.BackColor = Color.White;
-            pnlFooter.Location = new Point(3, 617);
-            pnlFooter.Name = "pnlFooter";
-            pnlFooter.Size = new Size(1596, 175);
-            pnlFooter.TabIndex = 2;
+            pnlFooter_lgnSec.BackColor = Color.White;
+            pnlFooter_lgnSec.Location = new Point(3, 617);
+            pnlFooter_lgnSec.Name = "pnlFooter_lgnSec";
+            pnlFooter_lgnSec.Size = new Size(1596, 175);
+            pnlFooter_lgnSec.TabIndex = 2;
             // 
             // rpLoginBox
             // 
@@ -1125,10 +1271,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 244, 247);
             ClientSize = new Size(1599, 798);
+            Controls.Add(createAccountPanel);
             Controls.Add(forgotPasswordPanel);
             Controls.Add(pnlWelcomeSection);
             Controls.Add(pnlLoginSection);
-            Controls.Add(createAccountPanel);
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             Name = "mainForm";
@@ -1147,27 +1293,33 @@
             pnlFacebookHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_wlcSec).EndInit();
             createAccountPanel.ResumeLayout(false);
-            roundedPanel2.ResumeLayout(false);
-            roundedPanel2.PerformLayout();
+            createAccountPanel.PerformLayout();
+            rpCreateAccountContainer.ResumeLayout(false);
+            rpCreateAccountContainer.PerformLayout();
+            roundedPanel14.ResumeLayout(false);
+            roundedPanel5.ResumeLayout(false);
+            roundedPanel5.PerformLayout();
             roundedPanel13.ResumeLayout(false);
             roundedPanel13.PerformLayout();
-            roundedPanel6.ResumeLayout(false);
-            roundedPanel6.PerformLayout();
-            roundedPanel12.ResumeLayout(false);
-            roundedPanel12.PerformLayout();
-            roundedPanel11.ResumeLayout(false);
-            roundedPanel11.PerformLayout();
             roundedPanel10.ResumeLayout(false);
             roundedPanel10.PerformLayout();
-            roundedPanel9.ResumeLayout(false);
-            roundedPanel9.PerformLayout();
             roundedPanel7.ResumeLayout(false);
-            roundedPanel8.ResumeLayout(false);
-            roundedPanel5.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            roundedPanel3.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            roundedPanel12.ResumeLayout(false);
+            roundedPanel12.PerformLayout();
             roundedPanel4.ResumeLayout(false);
             roundedPanel4.PerformLayout();
-            roundedPanel3.ResumeLayout(false);
-            roundedPanel3.PerformLayout();
+            roundedPanel2.ResumeLayout(false);
+            roundedPanel2.PerformLayout();
+            roundedPanel1.ResumeLayout(false);
+            roundedPanel1.PerformLayout();
+            rpBirthdayContainer_crtAcctSec.ResumeLayout(false);
+            pnlDropdownContainer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picDrowdownLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             forgotPasswordPanel.ResumeLayout(false);
             pnlNavBar.ResumeLayout(false);
@@ -1214,39 +1366,19 @@
         private RoundedPanel rpEmailContainer_wlcSec;
         private TextBox txtEmailInput_wlcSec;
         private Panel createAccountPanel;
-        private Label alreadyHaveAccountLabel;
         private PictureBox pictureBox2;
-        private RoundedPanel roundedPanel2;
-        private RoundedPanel roundedPanel3;
-        private TextBox textBox1;
-        private RoundedPanel roundedPanel4;
-        private TextBox textBox2;
-        private Label label3;
-        private RoundedPanel roundedPanel6;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label2;
         private RoundedPanel roundedPanel5;
-        private RoundedPanel roundedPanel7;
         private RoundedPanel roundedPanel8;
-        private RoundedPanel roundedPanel13;
-        private TextBox textBox4;
-        private RoundedPanel roundedPanel12;
-        private TextBox textBox3;
         private RoundedPanel roundedPanel11;
         private RoundedPanel roundedPanel10;
         private RoundedPanel roundedPanel9;
         private Label label7;
-        private TextBox textBox6;
-        private TextBox textBox5;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private RadioButton radioButton3;
         private Label label9;
         private Label label8;
         private Label label10;
-        private ComboBox comboBox2;
         private ComboBox comboBox3;
         private ComboBox comboBox1;
         private Panel forgotPasswordPanel;
@@ -1263,11 +1395,11 @@
         private Label lblLogin_lgnSec;
         private LinkLabel lnkSignupForFb;
         private Label lblLoginIntoFb;
-        private Panel pnlFooter;
+        private Panel pnlFooter_lgnSec;
         private PictureBox picFacebookLogo_lgnSec;
         private Panel pnlNavBar;
         private RoundedPanel rpForgotPasswordBox;
-        private Label lblTitle;
+        private Label lblFindYourAccount;
         private Label lblInstruction;
         private RoundedPanel rpSearchContainer_fgtSec;
         private Label lblSearch_fgtSec;
@@ -1280,11 +1412,50 @@
         private RoundedPanel rpPasswordContainer_fgtSec;
         private TextBox txtPasswordInput_fgtSec;
         private TextBox txtEmailInput_fgtSec;
-        private Panel panel1;
+        private Panel pnlFooter_fgtSec;
         private LinkLabel lnkForgotPassword_fgtSec;
         private RoundedPanel rpEmailContainerSearch_fgtSec;
         private TextBox txtEmailInputSearch_fgtSec;
         private Label label1;
         private Label label11;
+        private RoundedPanel roundedPanel4;
+        private Panel panel2;
+        private PictureBox pictureBox3;
+        private ComboBox comboBox4;
+        private RoundedPanel rpCreateAccountContainer;
+        private RoundedPanel roundedPanel2;
+        private TextBox textBox2;
+        private RoundedPanel roundedPanel1;
+        private TextBox textBox1;
+        private RoundedPanel rpBirthdayContainer_crtAcctSec;
+        private Panel pnlDropdownContainer;
+        private PictureBox picDrowdownLogo;
+        private ComboBox cbbBirthday_crtAcctSec;
+        private Label label3;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private Label lnkAlreadyHaveanAccount;
+        private Label label5;
+        private Label lblTagline_crtAcctSec;
+        private Label lblCreateANewAccount;
+        private RoundedPanel roundedPanel12;
+        private TextBox textBox4;
+        private Label label2;
+        private TextBox textBox3;
+        private RoundedPanel roundedPanel3;
+        private Panel panel1;
+        private PictureBox pictureBox1;
+        private ComboBox comboBox2;
+        private RoundedPanel roundedPanel7;
+        private RoundedPanel roundedPanel13;
+        private Label label6;
+        private RadioButton radioButton4;
+        private RoundedPanel roundedPanel14;
+        private Label label12;
+        private LinkLabel linkLabel1;
+        private LinkLabel linkLabel4;
+        private LinkLabel linkLabel3;
+        private LinkLabel linkLabel2;
+        private LinkLabel lnkAlreadyHaveAnAccount;
     }
 }

@@ -21,12 +21,64 @@
             ConfigureHoverEffect(lblLogin_fgtSec, rpLoginContainer_fgtSec,
                 StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
             ConfigureHoverEffect(lblSearch_fgtSec, rpSearchContainer_fgtSec,
-              StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
+                StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
             ConfigureHoverEffect(lblCancel_fgtSec, rpCancelContainer_fgtSec,
-              StyleConstants.LightGray, StyleConstants.LightGray);
+                StyleConstants.LightGray, StyleConstants.LightGray);
             ApplyFonts();
             ConfigureInputFields();
 
+            // Select first item automatically
+            if (cbbBirthday_crtAcctSec.Items.Count > 0)
+            {
+                cbbBirthday_crtAcctSec.SelectedIndex = 0;
+            }
+
+            // Remove blue highlight
+            ConfigureComboBoxAppearance();
+
+
+        }
+        private void ConfigureComboBoxAppearance()
+        {
+            // Set these properties
+            cbbBirthday_crtAcctSec.DrawMode = DrawMode.OwnerDrawFixed;
+            cbbBirthday_crtAcctSec.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbbBirthday_crtAcctSec.DrawItem += CbbBirthday_crtAcctSec_DrawItem;
+        }
+
+        private void CbbBirthday_crtAcctSec_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index < 0) return;
+
+            ComboBox combo = sender as ComboBox;
+
+            // Custom colors example
+            Color backColor = (e.State & DrawItemState.Selected) == DrawItemState.Selected
+                ? ColorTranslator.FromHtml("#00000000")  // Light gray
+                : ColorTranslator.FromHtml("#FFFFFF"); // White
+
+            Color textColor = (e.State & DrawItemState.Selected) == DrawItemState.Selected
+                ? ColorTranslator.FromHtml("#383a3c")  // Facebook blue
+                : ColorTranslator.FromHtml("#444444"); // Dark gray
+
+            // Draw background
+            using (Brush backBrush = new SolidBrush(backColor))
+            {
+                e.Graphics.FillRectangle(backBrush, e.Bounds);
+            }
+
+            // Draw text
+            using (Brush textBrush = new SolidBrush(textColor))
+            {
+                e.Graphics.DrawString(
+                    combo.Items[e.Index].ToString(),
+                    e.Font,
+                    textBrush,
+                    e.Bounds);
+            }
+
+            // Remove focus rectangle if desired
+            // e.DrawFocusRectangle();
         }
         private void InitializePanelManager()
         {
@@ -64,10 +116,14 @@
             lblLogin_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
             lnkForgotPassword_fgtSec.Font = FontHelper.GetFont(StyleConstants.LinkFontSize, FontStyle.Bold);
             lblInstruction.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
-            lblTitle.Font = FontHelper.GetFont(StyleConstants.HeaderFontSize, FontStyle.Bold);
+            lblFindYourAccount.Font = FontHelper.GetFont(StyleConstants.HeaderFontSize, FontStyle.Bold);
             lblCancel_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
             lblSearch_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
             txtEmailInputSearch_fgtSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
+
+            // Create Account Section
+            lblTagline_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            lblCreateANewAccount.Font = FontHelper.GetFont(StyleConstants.HeaderFontSize + 4, FontStyle.Bold);
         }
 
         private void ConfigureInputFields()
@@ -81,7 +137,7 @@
         {
             // Panel navigation
             lblCreateAccount.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
-            alreadyHaveAccountLabel.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
+            lnkAlreadyHaveAnAccount.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotPassword.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
             lblCancel_fgtSec.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotAccount.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
