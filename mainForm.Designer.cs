@@ -1,6 +1,6 @@
 ﻿namespace facebook_clone
 {
-    partial class Form1
+    partial class mainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             roundedPanel1 = new RoundedPanel();
             emailPanel = new RoundedPanel();
             emailInput = new TextBox();

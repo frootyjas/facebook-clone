@@ -2,11 +2,11 @@
 
     namespace facebook_clone
     {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
 
     {
         PrivateFontCollection fbFont = new PrivateFontCollection();
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
 
@@ -122,11 +122,6 @@
             createaccountLabel.MouseEnter += (s, e) =>
             createAccountBtn.BackColor = ColorTranslator.FromHtml("#36a420");
             createaccountLabel.MouseLeave += (s, e) => createAccountBtn.BackColor = Color.FromArgb(153, 54, 164, 32);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void taglineLabel_Click(object sender, EventArgs e)
