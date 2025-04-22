@@ -51,6 +51,12 @@
             lblLogin_lgnSec.Font = FontHelper.GetFont(StyleConstants.ButtonFontSize, FontStyle.Bold);
             lnkForgotAccount.Font = FontHelper.GetFont(StyleConstants.LinkFontSize);
             lnkSignupForFb.Font = FontHelper.GetFont(StyleConstants.LinkFontSize);
+
+            // Forgot Password Section
+            txtEmailInput_fgtSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
+            txtPasswordInput_fgtSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
+            lblLogin_fgtSec.Font = FontHelper.GetFont(StyleConstants.SecondaryButtonFontSize, FontStyle.Bold);
+            lnkForgotPassword_fgtSec.Font = FontHelper.GetFont(StyleConstants.LinkFontSize, FontStyle.Bold);
         }
         private void ConfigureInputFields()
         {
@@ -64,13 +70,16 @@
             lblCreateAccount.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
             alreadyHaveAccountLabel.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotPassword.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
-            cancelLabel.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
+            lblCancel.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotAccount.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
             lnkSignupForFb.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
 
             // Input field focus handling
             SetupInputFieldFocus(txtEmailInput_lgnSec, rpEmailContainer_lgnSec, rpEmailContainer_lgnSec, rpPasswordContainer_lgnSec);
             SetupInputFieldFocus(txtPasswordInput_lgnSec, rpPasswordContainer_lgnSec, rpEmailContainer_lgnSec, rpPasswordContainer_lgnSec);
+
+            SetupInputFieldFocus(txtEmailInput_wlcSec, rpEmailContainer_wlcSec, rpEmailContainer_wlcSec, rpPasswordContainer_wlcSec);
+            SetupInputFieldFocus(txtPasswordInput_wlcSec, rpPasswordContainer_wlcSec, rpEmailContainer_wlcSec, rpPasswordContainer_wlcSec);
         }
         private void SetupInputFieldFocus(TextBox textBox, RoundedPanel container, params RoundedPanel[] allPanels)
         {

@@ -2,7 +2,7 @@
 {
     public static class StyleConstants
     {
-        public static Color PrimaryColor = ColorTranslator.FromHtml("#0866ff");
+        public static Color PrimaryColor = ColorTranslator.FromHtml("#1877f2");
         public static Color SecondaryColor = ColorTranslator.FromHtml("#42b72a");
         public static Color BorderColor = Color.FromArgb(221, 223, 226);
         public static Color TransparentBlue = Color.FromArgb(190, 24, 119, 242);
@@ -13,6 +13,7 @@
         public const float TaglineFontSize = 18f;
         public const float CreateAccountFontSize = 12f;
         public const float ButtonFontSize = 15f;
+        public const float SecondaryButtonFontSize = 12f;
         public const float LinkFontSize = 11f;
     }
 }
