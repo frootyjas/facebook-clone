@@ -12,8 +12,12 @@
             InitializeComponent();
             InitializePanelManager();
             SetupEventHandlers();
-            ConfigureHoverEffect(lblLogin_lgnSec, rpLoginContainer_lgnSec, 
-                StyleConstants.PrimaryColor, StyleConstants.TransparentBlue);
+            ConfigureHoverEffect(lblLogin_lgnSec, rpLoginContainer_lgnSec,
+                StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
+            ConfigureHoverEffect(lblLogin_wlcSec, rpLoginContainer_wlcSec,
+                StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
+            ConfigureHoverEffect(lblCreateAccount, rpCreateAccountContainer_wlcSec,
+                StyleConstants.DarkGreen, StyleConstants.SecondaryColor);
             ApplyFonts();
             ConfigureInputFields();
 
@@ -27,10 +31,20 @@
                 forgotPasswordPanel,
                 pnlLoginSection
             );
-        
+
         }
         private void ApplyFonts()
         {
+
+            // Welcome Section
+            txtEmailInput_wlcSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
+            txtPasswordInput_wlcSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
+            lblFacebookTagline.Font = FontHelper.GetFont(StyleConstants.TaglineFontSize);
+            lnkForgotPassword.Font = FontHelper.GetFont(StyleConstants.LinkFontSize);
+            lblLogin_wlcSec.Font = FontHelper.GetFont(StyleConstants.ButtonFontSize, FontStyle.Bold);
+            lblCreateAccount.Font = FontHelper.GetFont(StyleConstants.CreateAccountFontSize, FontStyle.Bold);
+
+            // Login Section
             lblLoginIntoFb.Font = FontHelper.GetFont(StyleConstants.HeaderFontSize);
             txtEmailInput_lgnSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
             txtPasswordInput_lgnSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize);
@@ -41,6 +55,7 @@
         private void ConfigureInputFields()
         {
             ConfigurePasswordField(txtPasswordInput_lgnSec);
+            ConfigurePasswordField(txtPasswordInput_wlcSec);
         }
 
         private void SetupEventHandlers()
@@ -113,6 +128,8 @@
                 }
             };
         }
+
+
     }
 
 }

@@ -36,10 +36,10 @@
             txtPasswordInput_wlcSec = new TextBox();
             rpCreateAccountContainer_wlcSec = new RoundedPanel();
             lblCreateAccount = new Label();
-            lblLineSeparator = new Label();
-            lnkForgotPassword = new LinkLabel();
             rpLoginContainer_wlcSec = new RoundedPanel();
             lblLogin_wlcSec = new Label();
+            lblLineSeparator = new Label();
+            lnkForgotPassword = new LinkLabel();
             pnlWelcomeSection = new Panel();
             pnlFacebookHeader = new Panel();
             lblFacebookTagline = new Label();
@@ -137,12 +137,13 @@
             pnlLoginBox.Controls.Add(rpEmailContainer_wlcSec);
             pnlLoginBox.Controls.Add(rpPasswordContainer_wlcSec);
             pnlLoginBox.Controls.Add(rpCreateAccountContainer_wlcSec);
+            pnlLoginBox.Controls.Add(rpLoginContainer_wlcSec);
             pnlLoginBox.Controls.Add(lblLineSeparator);
             pnlLoginBox.Controls.Add(lnkForgotPassword);
-            pnlLoginBox.Controls.Add(rpLoginContainer_wlcSec);
-            pnlLoginBox.Location = new Point(846, 164);
+            pnlLoginBox.CornerRadius = 7;
+            pnlLoginBox.Location = new Point(800, 161);
             pnlLoginBox.Name = "pnlLoginBox";
-            pnlLoginBox.Size = new Size(489, 392);
+            pnlLoginBox.Size = new Size(504, 427);
             pnlLoginBox.TabIndex = 0;
             // 
             // rpEmailContainer_wlcSec
@@ -151,8 +152,8 @@
             rpEmailContainer_wlcSec.BorderColor = Color.FromArgb(221, 223, 226);
             rpEmailContainer_wlcSec.BorderThickness = 1;
             rpEmailContainer_wlcSec.Controls.Add(txtEmailInput_wlcSec);
-            rpEmailContainer_wlcSec.CornerRadius = 8;
-            rpEmailContainer_wlcSec.Location = new Point(14, 18);
+            rpEmailContainer_wlcSec.CornerRadius = 5;
+            rpEmailContainer_wlcSec.Location = new Point(20, 21);
             rpEmailContainer_wlcSec.Name = "rpEmailContainer_wlcSec";
             rpEmailContainer_wlcSec.Size = new Size(462, 60);
             rpEmailContainer_wlcSec.TabIndex = 4;
@@ -160,7 +161,7 @@
             // txtEmailInput_wlcSec
             // 
             txtEmailInput_wlcSec.BorderStyle = BorderStyle.None;
-            txtEmailInput_wlcSec.Location = new Point(18, 19);
+            txtEmailInput_wlcSec.Location = new Point(16, 19);
             txtEmailInput_wlcSec.Name = "txtEmailInput_wlcSec";
             txtEmailInput_wlcSec.PlaceholderText = "Email or phone number";
             txtEmailInput_wlcSec.Size = new Size(428, 20);
@@ -172,8 +173,8 @@
             rpPasswordContainer_wlcSec.BorderColor = Color.FromArgb(221, 223, 226);
             rpPasswordContainer_wlcSec.BorderThickness = 1;
             rpPasswordContainer_wlcSec.Controls.Add(txtPasswordInput_wlcSec);
-            rpPasswordContainer_wlcSec.CornerRadius = 8;
-            rpPasswordContainer_wlcSec.Location = new Point(12, 91);
+            rpPasswordContainer_wlcSec.CornerRadius = 5;
+            rpPasswordContainer_wlcSec.Location = new Point(20, 95);
             rpPasswordContainer_wlcSec.Name = "rpPasswordContainer_wlcSec";
             rpPasswordContainer_wlcSec.Size = new Size(462, 60);
             rpPasswordContainer_wlcSec.TabIndex = 2;
@@ -181,7 +182,7 @@
             // txtPasswordInput_wlcSec
             // 
             txtPasswordInput_wlcSec.BorderStyle = BorderStyle.None;
-            txtPasswordInput_wlcSec.Location = new Point(18, 21);
+            txtPasswordInput_wlcSec.Location = new Point(15, 16);
             txtPasswordInput_wlcSec.Name = "txtPasswordInput_wlcSec";
             txtPasswordInput_wlcSec.PasswordChar = '●';
             txtPasswordInput_wlcSec.PlaceholderText = "Password";
@@ -193,8 +194,8 @@
             rpCreateAccountContainer_wlcSec.BackColor = Color.FromArgb(153, 54, 164, 32);
             rpCreateAccountContainer_wlcSec.BorderColor = Color.Gray;
             rpCreateAccountContainer_wlcSec.Controls.Add(lblCreateAccount);
-            rpCreateAccountContainer_wlcSec.CornerRadius = 8;
-            rpCreateAccountContainer_wlcSec.Location = new Point(123, 310);
+            rpCreateAccountContainer_wlcSec.CornerRadius = 5;
+            rpCreateAccountContainer_wlcSec.Location = new Point(121, 328);
             rpCreateAccountContainer_wlcSec.Name = "rpCreateAccountContainer_wlcSec";
             rpCreateAccountContainer_wlcSec.Size = new Size(255, 60);
             rpCreateAccountContainer_wlcSec.TabIndex = 1;
@@ -204,42 +205,20 @@
             lblCreateAccount.BackColor = Color.Transparent;
             lblCreateAccount.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblCreateAccount.ForeColor = Color.White;
-            lblCreateAccount.Location = new Point(3, 0);
+            lblCreateAccount.Location = new Point(2, 0);
             lblCreateAccount.Name = "lblCreateAccount";
-            lblCreateAccount.Size = new Size(252, 60);
+            lblCreateAccount.Size = new Size(250, 60);
             lblCreateAccount.TabIndex = 0;
             lblCreateAccount.Text = "Create new account";
             lblCreateAccount.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblLineSeparator
-            // 
-            lblLineSeparator.BackColor = Color.FromArgb(218, 221, 225);
-            lblLineSeparator.BorderStyle = BorderStyle.Fixed3D;
-            lblLineSeparator.Location = new Point(22, 278);
-            lblLineSeparator.Name = "lblLineSeparator";
-            lblLineSeparator.Size = new Size(439, 1);
-            lblLineSeparator.TabIndex = 3;
-            lblLineSeparator.Text = "label1";
-            // 
-            // lnkForgotPassword
-            // 
-            lnkForgotPassword.AutoSize = true;
-            lnkForgotPassword.LinkBehavior = LinkBehavior.HoverUnderline;
-            lnkForgotPassword.LinkColor = Color.FromArgb(23, 102, 255);
-            lnkForgotPassword.Location = new Point(184, 237);
-            lnkForgotPassword.Name = "lnkForgotPassword";
-            lnkForgotPassword.Size = new Size(153, 19);
-            lnkForgotPassword.TabIndex = 1;
-            lnkForgotPassword.TabStop = true;
-            lnkForgotPassword.Text = "Forgot Password?";
-            // 
             // rpLoginContainer_wlcSec
             // 
-            rpLoginContainer_wlcSec.BackColor = Color.FromArgb(153, 24, 119, 242);
+            rpLoginContainer_wlcSec.BackColor = Color.FromArgb(8, 102, 255);
             rpLoginContainer_wlcSec.BorderColor = Color.Gray;
             rpLoginContainer_wlcSec.Controls.Add(lblLogin_wlcSec);
             rpLoginContainer_wlcSec.CornerRadius = 8;
-            rpLoginContainer_wlcSec.Location = new Point(12, 166);
+            rpLoginContainer_wlcSec.Location = new Point(21, 168);
             rpLoginContainer_wlcSec.Name = "rpLoginContainer_wlcSec";
             rpLoginContainer_wlcSec.Size = new Size(462, 60);
             rpLoginContainer_wlcSec.TabIndex = 0;
@@ -249,12 +228,34 @@
             lblLogin_wlcSec.BackColor = Color.Transparent;
             lblLogin_wlcSec.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogin_wlcSec.ForeColor = Color.White;
-            lblLogin_wlcSec.Location = new Point(0, 0);
+            lblLogin_wlcSec.Location = new Point(-1, 0);
             lblLogin_wlcSec.Name = "lblLogin_wlcSec";
             lblLogin_wlcSec.Size = new Size(462, 60);
             lblLogin_wlcSec.TabIndex = 0;
             lblLogin_wlcSec.Text = "Log In";
             lblLogin_wlcSec.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblLineSeparator
+            // 
+            lblLineSeparator.BackColor = Color.FromArgb(218, 221, 225);
+            lblLineSeparator.ForeColor = Color.FromArgb(218, 221, 225);
+            lblLineSeparator.Location = new Point(28, 294);
+            lblLineSeparator.Name = "lblLineSeparator";
+            lblLineSeparator.Size = new Size(455, 1);
+            lblLineSeparator.TabIndex = 3;
+            lblLineSeparator.Text = "label1";
+            // 
+            // lnkForgotPassword
+            // 
+            lnkForgotPassword.AutoSize = true;
+            lnkForgotPassword.LinkBehavior = LinkBehavior.HoverUnderline;
+            lnkForgotPassword.LinkColor = Color.FromArgb(23, 102, 255);
+            lnkForgotPassword.Location = new Point(169, 249);
+            lnkForgotPassword.Name = "lnkForgotPassword";
+            lnkForgotPassword.Size = new Size(153, 19);
+            lnkForgotPassword.TabIndex = 1;
+            lnkForgotPassword.TabStop = true;
+            lnkForgotPassword.Text = "Forgot Password?";
             // 
             // pnlWelcomeSection
             // 
@@ -271,9 +272,9 @@
             pnlFacebookHeader.BackColor = Color.Transparent;
             pnlFacebookHeader.Controls.Add(lblFacebookTagline);
             pnlFacebookHeader.Controls.Add(picFacebookLogo_wlcSec);
-            pnlFacebookHeader.Location = new Point(83, 164);
+            pnlFacebookHeader.Location = new Point(124, 171);
             pnlFacebookHeader.Name = "pnlFacebookHeader";
-            pnlFacebookHeader.Size = new Size(488, 342);
+            pnlFacebookHeader.Size = new Size(504, 342);
             pnlFacebookHeader.TabIndex = 3;
             // 
             // lblFacebookTagline
@@ -290,9 +291,9 @@
             // 
             picFacebookLogo_wlcSec.BackColor = Color.Transparent;
             picFacebookLogo_wlcSec.Image = (Image)resources.GetObject("picFacebookLogo_wlcSec.Image");
-            picFacebookLogo_wlcSec.Location = new Point(-7, 18);
+            picFacebookLogo_wlcSec.Location = new Point(-15, -17);
             picFacebookLogo_wlcSec.Name = "picFacebookLogo_wlcSec";
-            picFacebookLogo_wlcSec.Size = new Size(333, 180);
+            picFacebookLogo_wlcSec.Size = new Size(389, 231);
             picFacebookLogo_wlcSec.SizeMode = PictureBoxSizeMode.Zoom;
             picFacebookLogo_wlcSec.TabIndex = 1;
             picFacebookLogo_wlcSec.TabStop = false;
@@ -777,14 +778,14 @@
             rpLoginBox.CornerRadius = 7;
             rpLoginBox.Location = new Point(556, 140);
             rpLoginBox.Name = "rpLoginBox";
-            rpLoginBox.Size = new Size(490, 379);
+            rpLoginBox.Size = new Size(502, 379);
             rpLoginBox.TabIndex = 1;
             // 
             // lblLoginIntoFb
             // 
             lblLoginIntoFb.AutoSize = true;
             lblLoginIntoFb.Font = new Font("FiraCode Nerd Font", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblLoginIntoFb.Location = new Point(149, 29);
+            lblLoginIntoFb.Location = new Point(161, 31);
             lblLoginIntoFb.Name = "lblLoginIntoFb";
             lblLoginIntoFb.Size = new Size(214, 24);
             lblLoginIntoFb.TabIndex = 6;
@@ -809,7 +810,7 @@
             rpEmailContainer_lgnSec.BorderThickness = 1;
             rpEmailContainer_lgnSec.Controls.Add(txtEmailInput_lgnSec);
             rpEmailContainer_lgnSec.CornerRadius = 5;
-            rpEmailContainer_lgnSec.Location = new Point(14, 88);
+            rpEmailContainer_lgnSec.Location = new Point(20, 85);
             rpEmailContainer_lgnSec.Name = "rpEmailContainer_lgnSec";
             rpEmailContainer_lgnSec.Size = new Size(462, 60);
             rpEmailContainer_lgnSec.TabIndex = 4;
@@ -830,7 +831,7 @@
             rpPasswordContainer_lgnSec.BorderThickness = 1;
             rpPasswordContainer_lgnSec.Controls.Add(txtPasswordInput_lgnSec);
             rpPasswordContainer_lgnSec.CornerRadius = 6;
-            rpPasswordContainer_lgnSec.Location = new Point(12, 161);
+            rpPasswordContainer_lgnSec.Location = new Point(20, 159);
             rpPasswordContainer_lgnSec.Name = "rpPasswordContainer_lgnSec";
             rpPasswordContainer_lgnSec.Size = new Size(464, 60);
             rpPasswordContainer_lgnSec.TabIndex = 2;
@@ -859,11 +860,11 @@
             // 
             // rpLoginContainer_lgnSec
             // 
-            rpLoginContainer_lgnSec.BackColor = Color.FromArgb(153, 24, 119, 242);
+            rpLoginContainer_lgnSec.BackColor = Color.FromArgb(8, 102, 255);
             rpLoginContainer_lgnSec.BorderColor = Color.Gray;
             rpLoginContainer_lgnSec.Controls.Add(lblLogin_lgnSec);
             rpLoginContainer_lgnSec.CornerRadius = 6;
-            rpLoginContainer_lgnSec.Location = new Point(12, 234);
+            rpLoginContainer_lgnSec.Location = new Point(20, 231);
             rpLoginContainer_lgnSec.Name = "rpLoginContainer_lgnSec";
             rpLoginContainer_lgnSec.Size = new Size(464, 59);
             rpLoginContainer_lgnSec.TabIndex = 0;
@@ -873,9 +874,9 @@
             lblLogin_lgnSec.BackColor = Color.Transparent;
             lblLogin_lgnSec.Font = new Font("Microsoft Sans Serif", 11.999999F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblLogin_lgnSec.ForeColor = Color.White;
-            lblLogin_lgnSec.Location = new Point(0, 0);
+            lblLogin_lgnSec.Location = new Point(2, 0);
             lblLogin_lgnSec.Name = "lblLogin_lgnSec";
-            lblLogin_lgnSec.Size = new Size(464, 60);
+            lblLogin_lgnSec.Size = new Size(462, 59);
             lblLogin_lgnSec.TabIndex = 0;
             lblLogin_lgnSec.Text = "Log In";
             lblLogin_lgnSec.TextAlign = ContentAlignment.MiddleCenter;
@@ -884,7 +885,7 @@
             // 
             picFacebookLogo_lgnSec.BackColor = Color.Transparent;
             picFacebookLogo_lgnSec.Image = (Image)resources.GetObject("picFacebookLogo_lgnSec.Image");
-            picFacebookLogo_lgnSec.Location = new Point(656, 26);
+            picFacebookLogo_lgnSec.Location = new Point(665, 26);
             picFacebookLogo_lgnSec.Name = "picFacebookLogo_lgnSec";
             picFacebookLogo_lgnSec.Size = new Size(295, 132);
             picFacebookLogo_lgnSec.SizeMode = PictureBoxSizeMode.Zoom;
