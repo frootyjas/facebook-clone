@@ -242,6 +242,8 @@
             SetupInputFieldFocus(txtEmailInput_fgtSec, rpEmailContainer_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
             SetupInputFieldFocus(txtPasswordInput_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
 
+            SetupInputFieldFocus(txtEmailInputSearch_fgtSec, rpEmailContainerSearch_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
+
             SetupInputFieldFocus(txtEmailInput_crtAcctSec, rpEmailContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
             SetupInputFieldFocus(txtPasswordInput_crtAcctSec, rpPasswordContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
             SetupInputFieldFocus(txtFirstNameInput_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
