@@ -30,7 +30,7 @@
             ApplyFonts();
             ConfigureInputFields();
 
-         
+
 
             // Remove blue highlight
             ConfigureComboBoxAppearance(cbbBirthday_crtAcctSec, 0);
@@ -205,6 +205,13 @@
             lblSignUp_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.ButtonFontSize - 1, FontStyle.Bold);
             lblContactInfoNotice.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
             lblSignupAgreement.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
+            lblGender_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.LabelFontSize);
+            lblBirthday_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.LabelFontSize);
+            lnkLearnMore_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
+            lnkPrivacyPolicy_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
+            lnkCookiesPolicy_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
+            lnkTerms_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
+            
         }
 
         private void ConfigureInputFields()
@@ -234,6 +241,11 @@
 
             SetupInputFieldFocus(txtEmailInput_fgtSec, rpEmailContainer_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
             SetupInputFieldFocus(txtPasswordInput_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainer_fgtSec, rpPasswordContainer_fgtSec, rpEmailContainerSearch_fgtSec);
+
+            SetupInputFieldFocus(txtEmailInput_crtAcctSec, rpEmailContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
+            SetupInputFieldFocus(txtPasswordInput_crtAcctSec, rpPasswordContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
+            SetupInputFieldFocus(txtFirstNameInput_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
+            SetupInputFieldFocus(txtLastNameInput_crtAcctSec, rpLastNameContainer_crtAcctSec, rpEmailContainer_crtAcctSec, rpPasswordContainer_crtAcctSec, rpFirstNameContainer_crtAcctSec, rpLastNameContainer_crtAcctSec);
         }
         private void SetupInputFieldFocus(TextBox textBox, RoundedPanel container, params RoundedPanel[] allPanels)
         {
@@ -292,7 +304,7 @@
             };
         }
 
-
+       
     }
 
 }

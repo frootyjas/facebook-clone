@@ -47,15 +47,21 @@
             createAccountPanel = new Panel();
             panel3 = new Panel();
             rpCreateAccountContainer = new RoundedPanel();
+            panel5 = new Panel();
+            pictureBox5 = new PictureBox();
+            lblGender_crtAcctSec = new Label();
+            panel4 = new Panel();
+            pictureBox4 = new PictureBox();
+            lblBirthday_crtAcctSec = new Label();
+            lnkLearnMore_crtAcctSec = new LinkLabel();
+            lnkTerms_crtAcctSec = new LinkLabel();
+            lnkPrivacyPolicy_crtAcctSec = new LinkLabel();
+            lnkCookiesPolicy_crtAcctSec = new LinkLabel();
             lblSignupAgreement = new Label();
             lblContactInfoNotice = new Label();
             lnkAlreadyHaveAnAccount_crtAcctSec = new LinkLabel();
-            linkLabel4 = new LinkLabel();
-            linkLabel3 = new LinkLabel();
-            linkLabel2 = new LinkLabel();
             rpSignUpContainer_crtAcctSec = new RoundedPanel();
             lblSignUp_crtAcctSec = new Label();
-            linkLabel1 = new LinkLabel();
             rpCustomRadioContainer_crtAcctSec = new RoundedPanel();
             lblCustom_crtAcctSec = new Label();
             rdCustom_crtAcctSec = new RadioButton();
@@ -75,7 +81,6 @@
             cbbDay_crtAcctSec = new ComboBox();
             rpPasswordContainer_crtAcctSec = new RoundedPanel();
             txtPasswordInput_crtAcctSec = new TextBox();
-            label2 = new Label();
             rpEmailContainer_crtAcctSec = new RoundedPanel();
             txtEmailInput_crtAcctSec = new TextBox();
             rpLastNameContainer_crtAcctSec = new RoundedPanel();
@@ -87,7 +92,6 @@
             picDrowdownLogo = new PictureBox();
             cbbBirthday_crtAcctSec = new ComboBox();
             label3 = new Label();
-            label5 = new Label();
             lblTagline_crtAcctSec = new Label();
             lblCreateANewAccount = new Label();
             pictureBox2 = new PictureBox();
@@ -136,6 +140,10 @@
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_wlcSec).BeginInit();
             createAccountPanel.SuspendLayout();
             rpCreateAccountContainer.SuspendLayout();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             rpSignUpContainer_crtAcctSec.SuspendLayout();
             rpCustomRadioContainer_crtAcctSec.SuspendLayout();
             rpMaleRadioContainer_crtAcctSec.SuspendLayout();
@@ -365,44 +373,159 @@
             rpCreateAccountContainer.AutoSize = true;
             rpCreateAccountContainer.BackColor = Color.White;
             rpCreateAccountContainer.BorderColor = Color.Gray;
+            rpCreateAccountContainer.Controls.Add(panel5);
+            rpCreateAccountContainer.Controls.Add(panel4);
+            rpCreateAccountContainer.Controls.Add(lnkLearnMore_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(lnkTerms_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(lnkPrivacyPolicy_crtAcctSec);
+            rpCreateAccountContainer.Controls.Add(lnkCookiesPolicy_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(lblSignupAgreement);
             rpCreateAccountContainer.Controls.Add(lblContactInfoNotice);
             rpCreateAccountContainer.Controls.Add(lnkAlreadyHaveAnAccount_crtAcctSec);
-            rpCreateAccountContainer.Controls.Add(linkLabel4);
-            rpCreateAccountContainer.Controls.Add(linkLabel3);
-            rpCreateAccountContainer.Controls.Add(linkLabel2);
             rpCreateAccountContainer.Controls.Add(rpSignUpContainer_crtAcctSec);
-            rpCreateAccountContainer.Controls.Add(linkLabel1);
             rpCreateAccountContainer.Controls.Add(rpCustomRadioContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpMaleRadioContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpFemaleRadioContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpYearContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpDayContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpPasswordContainer_crtAcctSec);
-            rpCreateAccountContainer.Controls.Add(label2);
             rpCreateAccountContainer.Controls.Add(rpEmailContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpLastNameContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpFirstNameContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(rpBirthdayContainer_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(label3);
-            rpCreateAccountContainer.Controls.Add(label5);
             rpCreateAccountContainer.Controls.Add(lblTagline_crtAcctSec);
             rpCreateAccountContainer.Controls.Add(lblCreateANewAccount);
             rpCreateAccountContainer.CornerRadius = 7;
             rpCreateAccountContainer.Location = new Point(543, 139);
             rpCreateAccountContainer.Name = "rpCreateAccountContainer";
-            rpCreateAccountContainer.Size = new Size(529, 750);
+            rpCreateAccountContainer.Size = new Size(529, 745);
             rpCreateAccountContainer.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Transparent;
+            panel5.Controls.Add(pictureBox5);
+            panel5.Controls.Add(lblGender_crtAcctSec);
+            panel5.Location = new Point(20, 266);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(83, 29);
+            panel5.TabIndex = 25;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(62, 3);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(16, 23);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 22;
+            pictureBox5.TabStop = false;
+            // 
+            // lblGender_crtAcctSec
+            // 
+            lblGender_crtAcctSec.AutoSize = true;
+            lblGender_crtAcctSec.Font = new Font("Segoe UI Semilight", 7.50000048F);
+            lblGender_crtAcctSec.ForeColor = Color.FromArgb(107, 113, 122);
+            lblGender_crtAcctSec.Location = new Point(0, 7);
+            lblGender_crtAcctSec.Name = "lblGender_crtAcctSec";
+            lblGender_crtAcctSec.Size = new Size(49, 17);
+            lblGender_crtAcctSec.TabIndex = 5;
+            lblGender_crtAcctSec.Text = "Gender";
+            lblGender_crtAcctSec.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.Transparent;
+            panel4.Controls.Add(pictureBox4);
+            panel4.Controls.Add(lblBirthday_crtAcctSec);
+            panel4.Location = new Point(21, 181);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(83, 29);
+            panel4.TabIndex = 24;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(62, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(16, 23);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 22;
+            pictureBox4.TabStop = false;
+            // 
+            // lblBirthday_crtAcctSec
+            // 
+            lblBirthday_crtAcctSec.AutoSize = true;
+            lblBirthday_crtAcctSec.Font = new Font("Segoe UI Semilight", 7.50000048F);
+            lblBirthday_crtAcctSec.ForeColor = Color.FromArgb(107, 113, 122);
+            lblBirthday_crtAcctSec.Location = new Point(0, 7);
+            lblBirthday_crtAcctSec.Name = "lblBirthday_crtAcctSec";
+            lblBirthday_crtAcctSec.Size = new Size(53, 17);
+            lblBirthday_crtAcctSec.TabIndex = 5;
+            lblBirthday_crtAcctSec.Text = "Birthday";
+            lblBirthday_crtAcctSec.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // lnkLearnMore_crtAcctSec
+            // 
+            lnkLearnMore_crtAcctSec.Font = new Font("Segoe UI Semilight", 7.5F);
+            lnkLearnMore_crtAcctSec.LinkBehavior = LinkBehavior.HoverUnderline;
+            lnkLearnMore_crtAcctSec.LinkColor = Color.FromArgb(23, 102, 255);
+            lnkLearnMore_crtAcctSec.Location = new Point(84, 519);
+            lnkLearnMore_crtAcctSec.Name = "lnkLearnMore_crtAcctSec";
+            lnkLearnMore_crtAcctSec.Size = new Size(75, 17);
+            lnkLearnMore_crtAcctSec.TabIndex = 14;
+            lnkLearnMore_crtAcctSec.TabStop = true;
+            lnkLearnMore_crtAcctSec.Text = "Learn more.";
+            // 
+            // lnkTerms_crtAcctSec
+            // 
+            lnkTerms_crtAcctSec.BackColor = Color.Transparent;
+            lnkTerms_crtAcctSec.Font = new Font("Segoe UI Semilight", 7.5F);
+            lnkTerms_crtAcctSec.LinkBehavior = LinkBehavior.HoverUnderline;
+            lnkTerms_crtAcctSec.LinkColor = Color.FromArgb(23, 102, 255);
+            lnkTerms_crtAcctSec.Location = new Point(234, 549);
+            lnkTerms_crtAcctSec.Name = "lnkTerms_crtAcctSec";
+            lnkTerms_crtAcctSec.Size = new Size(47, 17);
+            lnkTerms_crtAcctSec.TabIndex = 16;
+            lnkTerms_crtAcctSec.TabStop = true;
+            lnkTerms_crtAcctSec.Text = "Terms,";
+            // 
+            // lnkPrivacyPolicy_crtAcctSec
+            // 
+            lnkPrivacyPolicy_crtAcctSec.BackColor = Color.Transparent;
+            lnkPrivacyPolicy_crtAcctSec.Font = new Font("Segoe UI Semilight", 7.5F);
+            lnkPrivacyPolicy_crtAcctSec.LinkBehavior = LinkBehavior.HoverUnderline;
+            lnkPrivacyPolicy_crtAcctSec.LinkColor = Color.FromArgb(23, 102, 255);
+            lnkPrivacyPolicy_crtAcctSec.Location = new Point(279, 549);
+            lnkPrivacyPolicy_crtAcctSec.Name = "lnkPrivacyPolicy_crtAcctSec";
+            lnkPrivacyPolicy_crtAcctSec.Size = new Size(90, 17);
+            lnkPrivacyPolicy_crtAcctSec.TabIndex = 17;
+            lnkPrivacyPolicy_crtAcctSec.TabStop = true;
+            lnkPrivacyPolicy_crtAcctSec.Text = "Privacy Policy";
+            // 
+            // lnkCookiesPolicy_crtAcctSec
+            // 
+            lnkCookiesPolicy_crtAcctSec.Font = new Font("Segoe UI Semilight", 7.50000048F);
+            lnkCookiesPolicy_crtAcctSec.LinkBehavior = LinkBehavior.HoverUnderline;
+            lnkCookiesPolicy_crtAcctSec.LinkColor = Color.FromArgb(23, 102, 255);
+            lnkCookiesPolicy_crtAcctSec.Location = new Point(393, 549);
+            lnkCookiesPolicy_crtAcctSec.Name = "lnkCookiesPolicy_crtAcctSec";
+            lnkCookiesPolicy_crtAcctSec.Size = new Size(109, 17);
+            lnkCookiesPolicy_crtAcctSec.TabIndex = 18;
+            lnkCookiesPolicy_crtAcctSec.TabStop = true;
+            lnkCookiesPolicy_crtAcctSec.Text = "Cookies Policy";
             // 
             // lblSignupAgreement
             // 
+            lblSignupAgreement.BackColor = Color.Transparent;
             lblSignupAgreement.Font = new Font("Segoe UI Semilight", 7.50000048F);
             lblSignupAgreement.ForeColor = Color.FromArgb(107, 113, 122);
             lblSignupAgreement.Location = new Point(20, 549);
             lblSignupAgreement.Name = "lblSignupAgreement";
             lblSignupAgreement.Size = new Size(483, 36);
             lblSignupAgreement.TabIndex = 21;
-            lblSignupAgreement.Text = "By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.\r\n";
+            lblSignupAgreement.Text = "By clicking Sign Up, you agree to our Terms, Privacy Policy    and Cookies Policy. \r\nYou may receive SMS Notifications from us and can opt out any time.\r\n";
             lblSignupAgreement.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblContactInfoNotice
@@ -423,53 +546,12 @@
             lnkAlreadyHaveAnAccount_crtAcctSec.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lnkAlreadyHaveAnAccount_crtAcctSec.LinkBehavior = LinkBehavior.NeverUnderline;
             lnkAlreadyHaveAnAccount_crtAcctSec.LinkColor = Color.FromArgb(35, 125, 242);
-            lnkAlreadyHaveAnAccount_crtAcctSec.Location = new Point(156, 694);
+            lnkAlreadyHaveAnAccount_crtAcctSec.Location = new Point(151, 681);
             lnkAlreadyHaveAnAccount_crtAcctSec.Name = "lnkAlreadyHaveAnAccount_crtAcctSec";
             lnkAlreadyHaveAnAccount_crtAcctSec.Size = new Size(236, 23);
             lnkAlreadyHaveAnAccount_crtAcctSec.TabIndex = 19;
             lnkAlreadyHaveAnAccount_crtAcctSec.TabStop = true;
             lnkAlreadyHaveAnAccount_crtAcctSec.Text = "Already have an account?";
-            // 
-            // linkLabel4
-            // 
-            linkLabel4.AutoSize = true;
-            linkLabel4.Font = new Font("Segoe UI Semilight", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel4.LinkBehavior = LinkBehavior.HoverUnderline;
-            linkLabel4.LinkColor = Color.FromArgb(23, 102, 255);
-            linkLabel4.Location = new Point(39, 671);
-            linkLabel4.Name = "linkLabel4";
-            linkLabel4.Size = new Size(89, 17);
-            linkLabel4.TabIndex = 18;
-            linkLabel4.TabStop = true;
-            linkLabel4.Text = "Cookies Policy,";
-            // 
-            // linkLabel3
-            // 
-            linkLabel3.AutoSize = true;
-            linkLabel3.BackColor = Color.Transparent;
-            linkLabel3.Font = new Font("Segoe UI Semilight", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel3.LinkBehavior = LinkBehavior.HoverUnderline;
-            linkLabel3.LinkColor = Color.FromArgb(23, 102, 255);
-            linkLabel3.Location = new Point(403, 689);
-            linkLabel3.Name = "linkLabel3";
-            linkLabel3.Size = new Size(85, 17);
-            linkLabel3.TabIndex = 17;
-            linkLabel3.TabStop = true;
-            linkLabel3.Text = "Privacy Policy,";
-            // 
-            // linkLabel2
-            // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.BackColor = Color.Transparent;
-            linkLabel2.Font = new Font("Segoe UI Semilight", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel2.LinkBehavior = LinkBehavior.HoverUnderline;
-            linkLabel2.LinkColor = Color.FromArgb(23, 102, 255);
-            linkLabel2.Location = new Point(414, 643);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(44, 17);
-            linkLabel2.TabIndex = 16;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Terms,";
             // 
             // rpSignUpContainer_crtAcctSec
             // 
@@ -477,7 +559,7 @@
             rpSignUpContainer_crtAcctSec.BorderColor = Color.Gray;
             rpSignUpContainer_crtAcctSec.Controls.Add(lblSignUp_crtAcctSec);
             rpSignUpContainer_crtAcctSec.CornerRadius = 5;
-            rpSignUpContainer_crtAcctSec.Location = new Point(151, 627);
+            rpSignUpContainer_crtAcctSec.Location = new Point(148, 608);
             rpSignUpContainer_crtAcctSec.Name = "rpSignUpContainer_crtAcctSec";
             rpSignUpContainer_crtAcctSec.Size = new Size(240, 46);
             rpSignUpContainer_crtAcctSec.TabIndex = 15;
@@ -487,25 +569,12 @@
             lblSignUp_crtAcctSec.BackColor = Color.Transparent;
             lblSignUp_crtAcctSec.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSignUp_crtAcctSec.ForeColor = Color.White;
-            lblSignUp_crtAcctSec.Location = new Point(-1, -1);
+            lblSignUp_crtAcctSec.Location = new Point(-2, 0);
             lblSignUp_crtAcctSec.Name = "lblSignUp_crtAcctSec";
-            lblSignUp_crtAcctSec.Size = new Size(242, 47);
+            lblSignUp_crtAcctSec.Size = new Size(242, 46);
             lblSignUp_crtAcctSec.TabIndex = 0;
             lblSignUp_crtAcctSec.Text = "Sign Up";
             lblSignUp_crtAcctSec.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // linkLabel1
-            // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Font = new Font("Segoe UI Semilight", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabel1.LinkBehavior = LinkBehavior.HoverUnderline;
-            linkLabel1.LinkColor = Color.FromArgb(23, 102, 255);
-            linkLabel1.Location = new Point(387, 595);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(75, 17);
-            linkLabel1.TabIndex = 14;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Learn more.";
             // 
             // rpCustomRadioContainer_crtAcctSec
             // 
@@ -713,18 +782,6 @@
             txtPasswordInput_crtAcctSec.Size = new Size(449, 20);
             txtPasswordInput_crtAcctSec.TabIndex = 0;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semilight", 7.50000048F);
-            label2.ForeColor = Color.FromArgb(107, 113, 122);
-            label2.Location = new Point(21, 270);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 17);
-            label2.TabIndex = 13;
-            label2.Text = "Gender";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            // 
             // rpEmailContainer_crtAcctSec
             // 
             rpEmailContainer_crtAcctSec.BackColor = Color.Transparent;
@@ -840,18 +897,6 @@
             label3.Size = new Size(521, 1);
             label3.TabIndex = 10;
             label3.Text = "label1";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semilight", 7.50000048F);
-            label5.ForeColor = Color.FromArgb(107, 113, 122);
-            label5.Location = new Point(21, 188);
-            label5.Name = "label5";
-            label5.Size = new Size(53, 17);
-            label5.TabIndex = 5;
-            label5.Text = "Birthday";
-            label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // lblTagline_crtAcctSec
             // 
@@ -1305,6 +1350,12 @@
             createAccountPanel.PerformLayout();
             rpCreateAccountContainer.ResumeLayout(false);
             rpCreateAccountContainer.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             rpSignUpContainer_crtAcctSec.ResumeLayout(false);
             rpCustomRadioContainer_crtAcctSec.ResumeLayout(false);
             rpCustomRadioContainer_crtAcctSec.PerformLayout();
@@ -1442,12 +1493,11 @@
         private ComboBox cbbBirthday_crtAcctSec;
         private Label label3;
         private Label lnkAlreadyHaveanAccount;
-        private Label label5;
+        private Label lblBirthday_crtAcctSec;
         private Label lblTagline_crtAcctSec;
         private Label lblCreateANewAccount;
         private RoundedPanel rpPasswordContainer_crtAcctSec;
         private TextBox txtPasswordInput_crtAcctSec;
-        private Label label2;
         private TextBox txtEmailInput_crtAcctSec;
         private RoundedPanel rpDayContainer_crtAcctSec;
         private Panel panel1;
@@ -1459,13 +1509,18 @@
         private RadioButton rdMale_crtAcctSec;
         private RoundedPanel rpSignUpContainer_crtAcctSec;
         private Label lblSignUp_crtAcctSec;
-        private LinkLabel linkLabel1;
-        private LinkLabel linkLabel4;
-        private LinkLabel linkLabel3;
-        private LinkLabel linkLabel2;
+        private LinkLabel lnkLearnMore_crtAcctSec;
+        private LinkLabel lnkCookiesPolicy_crtAcctSec;
+        private LinkLabel lnkPrivacyPolicy_crtAcctSec;
+        private LinkLabel lnkTerms_crtAcctSec;
         private LinkLabel lnkAlreadyHaveAnAccount_crtAcctSec;
         private Panel panel3;
         private Label lblSignupAgreement;
         private Label lblContactInfoNotice;
+        private PictureBox pictureBox4;
+        private Panel panel4;
+        private Panel panel5;
+        private PictureBox pictureBox5;
+        private Label lblGender_crtAcctSec;
     }
 }

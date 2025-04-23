@@ -13,6 +13,7 @@
         public const float InputFontSize = 12f;
         public const float TaglineFontSize = 18f;
         public const float NoticeFontSize = 8f;
+        public const float LabelFontSize = 9f;
         public const float CreateAccountFontSize = 12f;
         public const float ButtonFontSize = 15f;
         public const float SecondaryButtonFontSize = 12f;
