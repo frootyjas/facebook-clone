@@ -44,7 +44,7 @@
             pnlFacebookHeader = new Panel();
             lblFacebookTagline = new Label();
             picFacebookLogo_wlcSec = new PictureBox();
-            createAccountPanel = new Panel();
+            pnlCreateAccount = new Panel();
             panel3 = new Panel();
             rpCreateAccountContainer = new RoundedPanel();
             panel5 = new Panel();
@@ -95,7 +95,7 @@
             lblTagline_crtAcctSec = new Label();
             lblCreateANewAccount = new Label();
             pictureBox2 = new PictureBox();
-            forgotPasswordPanel = new Panel();
+            pnlForgotPassword = new Panel();
             pnlFooter_fgtSec = new Panel();
             pnlNavBar = new Panel();
             lnkForgotPassword_fgtSec = new LinkLabel();
@@ -130,6 +130,23 @@
             rpLoginContainer_lgnSec = new RoundedPanel();
             lblLogin_lgnSec = new Label();
             picFacebookLogo_lgnSec = new PictureBox();
+            pnlVerification = new Panel();
+            panel7 = new Panel();
+            panel8 = new Panel();
+            pictureBox6 = new PictureBox();
+            roundedPanel4 = new RoundedPanel();
+            label10 = new Label();
+            label8 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            roundedPanel5 = new RoundedPanel();
+            label6 = new Label();
+            roundedPanel6 = new RoundedPanel();
+            textBox3 = new TextBox();
+            label7 = new Label();
+            label9 = new Label();
+            roundedPanel7 = new RoundedPanel();
+            label12 = new Label();
             pnlLoginBox.SuspendLayout();
             rpEmailContainer_wlcSec.SuspendLayout();
             rpPasswordContainer_wlcSec.SuspendLayout();
@@ -138,7 +155,7 @@
             pnlWelcomeSection.SuspendLayout();
             pnlFacebookHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_wlcSec).BeginInit();
-            createAccountPanel.SuspendLayout();
+            pnlCreateAccount.SuspendLayout();
             rpCreateAccountContainer.SuspendLayout();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -162,7 +179,7 @@
             pnlDropdownContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picDrowdownLogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            forgotPasswordPanel.SuspendLayout();
+            pnlForgotPassword.SuspendLayout();
             pnlNavBar.SuspendLayout();
             rpLoginContainer_fgtSec.SuspendLayout();
             rpPasswordContainer_fgtSec.SuspendLayout();
@@ -178,6 +195,13 @@
             rpPasswordContainer_lgnSec.SuspendLayout();
             rpLoginContainer_lgnSec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_lgnSec).BeginInit();
+            pnlVerification.SuspendLayout();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            roundedPanel4.SuspendLayout();
+            roundedPanel5.SuspendLayout();
+            roundedPanel6.SuspendLayout();
+            roundedPanel7.SuspendLayout();
             SuspendLayout();
             // 
             // pnlLoginBox
@@ -348,17 +372,17 @@
             picFacebookLogo_wlcSec.TabIndex = 1;
             picFacebookLogo_wlcSec.TabStop = false;
             // 
-            // createAccountPanel
+            // pnlCreateAccount
             // 
-            createAccountPanel.AutoScroll = true;
-            createAccountPanel.Controls.Add(panel3);
-            createAccountPanel.Controls.Add(rpCreateAccountContainer);
-            createAccountPanel.Controls.Add(pictureBox2);
-            createAccountPanel.Dock = DockStyle.Fill;
-            createAccountPanel.Location = new Point(0, 0);
-            createAccountPanel.Name = "createAccountPanel";
-            createAccountPanel.Size = new Size(1599, 798);
-            createAccountPanel.TabIndex = 4;
+            pnlCreateAccount.AutoScroll = true;
+            pnlCreateAccount.Controls.Add(panel3);
+            pnlCreateAccount.Controls.Add(rpCreateAccountContainer);
+            pnlCreateAccount.Controls.Add(pictureBox2);
+            pnlCreateAccount.Dock = DockStyle.Fill;
+            pnlCreateAccount.Location = new Point(0, 0);
+            pnlCreateAccount.Name = "pnlCreateAccount";
+            pnlCreateAccount.Size = new Size(1599, 798);
+            pnlCreateAccount.TabIndex = 4;
             // 
             // panel3
             // 
@@ -929,16 +953,16 @@
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
-            // forgotPasswordPanel
+            // pnlForgotPassword
             // 
-            forgotPasswordPanel.Controls.Add(pnlFooter_fgtSec);
-            forgotPasswordPanel.Controls.Add(pnlNavBar);
-            forgotPasswordPanel.Controls.Add(rpForgotPasswordBox);
-            forgotPasswordPanel.Dock = DockStyle.Fill;
-            forgotPasswordPanel.Location = new Point(0, 0);
-            forgotPasswordPanel.Name = "forgotPasswordPanel";
-            forgotPasswordPanel.Size = new Size(1599, 798);
-            forgotPasswordPanel.TabIndex = 4;
+            pnlForgotPassword.Controls.Add(pnlFooter_fgtSec);
+            pnlForgotPassword.Controls.Add(pnlNavBar);
+            pnlForgotPassword.Controls.Add(rpForgotPasswordBox);
+            pnlForgotPassword.Dock = DockStyle.Fill;
+            pnlForgotPassword.Location = new Point(0, 0);
+            pnlForgotPassword.Name = "pnlForgotPassword";
+            pnlForgotPassword.Size = new Size(1599, 798);
+            pnlForgotPassword.TabIndex = 4;
             // 
             // pnlFooter_fgtSec
             // 
@@ -1319,14 +1343,194 @@
             picFacebookLogo_lgnSec.TabIndex = 3;
             picFacebookLogo_lgnSec.TabStop = false;
             // 
+            // pnlVerification
+            // 
+            pnlVerification.Controls.Add(panel7);
+            pnlVerification.Controls.Add(panel8);
+            pnlVerification.Controls.Add(roundedPanel4);
+            pnlVerification.Dock = DockStyle.Fill;
+            pnlVerification.Location = new Point(0, 0);
+            pnlVerification.Name = "pnlVerification";
+            pnlVerification.Size = new Size(1599, 798);
+            pnlVerification.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.White;
+            panel7.Location = new Point(0, 576);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(1596, 222);
+            panel7.TabIndex = 4;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.White;
+            panel8.Controls.Add(pictureBox6);
+            panel8.Location = new Point(0, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1596, 72);
+            panel8.TabIndex = 3;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(3, -3);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(179, 75);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 2;
+            pictureBox6.TabStop = false;
+            // 
+            // roundedPanel4
+            // 
+            roundedPanel4.BackColor = Color.White;
+            roundedPanel4.BorderColor = Color.Gray;
+            roundedPanel4.Controls.Add(label10);
+            roundedPanel4.Controls.Add(label8);
+            roundedPanel4.Controls.Add(label4);
+            roundedPanel4.Controls.Add(label5);
+            roundedPanel4.Controls.Add(roundedPanel5);
+            roundedPanel4.Controls.Add(roundedPanel6);
+            roundedPanel4.Controls.Add(label7);
+            roundedPanel4.Controls.Add(label9);
+            roundedPanel4.Controls.Add(roundedPanel7);
+            roundedPanel4.CornerRadius = 7;
+            roundedPanel4.Location = new Point(490, 160);
+            roundedPanel4.Name = "roundedPanel4";
+            roundedPanel4.Size = new Size(581, 323);
+            roundedPanel4.TabIndex = 2;
+            // 
+            // label10
+            // 
+            label10.Location = new Point(282, 196);
+            label10.Name = "label10";
+            label10.Size = new Size(237, 31);
+            label10.TabIndex = 9;
+            label10.Text = "jericksonmayor@gmail.com";
+            // 
+            // label8
+            // 
+            label8.Location = new Point(287, 160);
+            label8.Name = "label8";
+            label8.Size = new Size(201, 24);
+            label8.TabIndex = 8;
+            label8.Text = "We sent your code to:";
+            // 
+            // label4
+            // 
+            label4.BackColor = Color.FromArgb(218, 221, 225);
+            label4.ForeColor = Color.FromArgb(218, 221, 225);
+            label4.Location = new Point(-2, 241);
+            label4.Name = "label4";
+            label4.Size = new Size(581, 1);
+            label4.TabIndex = 7;
+            label4.Text = "label4";
+            // 
+            // label5
+            // 
+            label5.BackColor = Color.FromArgb(218, 221, 225);
+            label5.ForeColor = Color.FromArgb(218, 221, 225);
+            label5.Location = new Point(1, 69);
+            label5.Name = "label5";
+            label5.Size = new Size(581, 1);
+            label5.TabIndex = 6;
+            label5.Text = "label5";
+            // 
+            // roundedPanel5
+            // 
+            roundedPanel5.BackColor = Color.FromArgb(228, 230, 235);
+            roundedPanel5.BorderColor = Color.Gray;
+            roundedPanel5.Controls.Add(label6);
+            roundedPanel5.CornerRadius = 5;
+            roundedPanel5.Location = new Point(330, 262);
+            roundedPanel5.Name = "roundedPanel5";
+            roundedPanel5.Size = new Size(111, 45);
+            roundedPanel5.TabIndex = 1;
+            // 
+            // label6
+            // 
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI Black", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.FromArgb(75, 79, 86);
+            label6.Location = new Point(3, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(105, 45);
+            label6.TabIndex = 0;
+            label6.Text = "Cancel";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // roundedPanel6
+            // 
+            roundedPanel6.BackColor = Color.Transparent;
+            roundedPanel6.BorderColor = Color.FromArgb(221, 223, 226);
+            roundedPanel6.BorderThickness = 1;
+            roundedPanel6.Controls.Add(textBox3);
+            roundedPanel6.CornerRadius = 5;
+            roundedPanel6.Location = new Point(23, 156);
+            roundedPanel6.Name = "roundedPanel6";
+            roundedPanel6.Size = new Size(241, 60);
+            roundedPanel6.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            textBox3.BorderStyle = BorderStyle.None;
+            textBox3.Location = new Point(14, 17);
+            textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "Enter Code";
+            textBox3.Size = new Size(214, 20);
+            textBox3.TabIndex = 0;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI Semilight", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(15, 18);
+            label7.Name = "label7";
+            label7.Size = new Size(201, 31);
+            label7.TabIndex = 3;
+            label7.Text = "Enter security code";
+            // 
+            // label9
+            // 
+            label9.Location = new Point(19, 90);
+            label9.Name = "label9";
+            label9.Size = new Size(524, 56);
+            label9.TabIndex = 2;
+            label9.Text = "Please check your email for a message with your code. Your code is 6 numbers long.";
+            // 
+            // roundedPanel7
+            // 
+            roundedPanel7.BackColor = Color.FromArgb(24, 119, 242);
+            roundedPanel7.BorderColor = Color.Gray;
+            roundedPanel7.Controls.Add(label12);
+            roundedPanel7.CornerRadius = 5;
+            roundedPanel7.Location = new Point(450, 262);
+            roundedPanel7.Name = "roundedPanel7";
+            roundedPanel7.Size = new Size(111, 45);
+            roundedPanel7.TabIndex = 2;
+            // 
+            // label12
+            // 
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Segoe UI Black", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(1, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(107, 45);
+            label12.TabIndex = 0;
+            label12.Text = "Continue";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // mainForm
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(242, 244, 247);
             ClientSize = new Size(1599, 798);
-            Controls.Add(createAccountPanel);
-            Controls.Add(forgotPasswordPanel);
+            Controls.Add(pnlVerification);
+            Controls.Add(pnlCreateAccount);
+            Controls.Add(pnlForgotPassword);
             Controls.Add(pnlWelcomeSection);
             Controls.Add(pnlLoginSection);
             FormBorderStyle = FormBorderStyle.None;
@@ -1346,8 +1550,8 @@
             pnlWelcomeSection.ResumeLayout(false);
             pnlFacebookHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_wlcSec).EndInit();
-            createAccountPanel.ResumeLayout(false);
-            createAccountPanel.PerformLayout();
+            pnlCreateAccount.ResumeLayout(false);
+            pnlCreateAccount.PerformLayout();
             rpCreateAccountContainer.ResumeLayout(false);
             rpCreateAccountContainer.PerformLayout();
             panel5.ResumeLayout(false);
@@ -1381,7 +1585,7 @@
             pnlDropdownContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picDrowdownLogo).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            forgotPasswordPanel.ResumeLayout(false);
+            pnlForgotPassword.ResumeLayout(false);
             pnlNavBar.ResumeLayout(false);
             pnlNavBar.PerformLayout();
             rpLoginContainer_fgtSec.ResumeLayout(false);
@@ -1405,6 +1609,15 @@
             rpPasswordContainer_lgnSec.PerformLayout();
             rpLoginContainer_lgnSec.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picFacebookLogo_lgnSec).EndInit();
+            pnlVerification.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            roundedPanel4.ResumeLayout(false);
+            roundedPanel4.PerformLayout();
+            roundedPanel5.ResumeLayout(false);
+            roundedPanel6.ResumeLayout(false);
+            roundedPanel6.PerformLayout();
+            roundedPanel7.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -1425,7 +1638,7 @@
         private TextBox txtPasswordInput_wlcSec;
         private RoundedPanel rpEmailContainer_wlcSec;
         private TextBox txtEmailInput_wlcSec;
-        private Panel createAccountPanel;
+        private Panel pnlCreateAccount;
         private PictureBox pictureBox2;
         private RoundedPanel rpCustomRadioContainer_crtAcctSec;
         private RoundedPanel roundedPanel8;
@@ -1441,7 +1654,7 @@
         private Label label10;
         private ComboBox comboBox3;
         private ComboBox comboBox1;
-        private Panel forgotPasswordPanel;
+        private Panel pnlForgotPassword;
         private RoundedPanel cancelBtn;
         private Label cancelLabel;
         private Panel pnlLoginSection;
@@ -1522,5 +1735,20 @@
         private Panel panel5;
         private PictureBox pictureBox5;
         private Label lblGender_crtAcctSec;
+        private Panel pnlVerification;
+        private Panel panel7;
+        private Panel panel8;
+        private PictureBox pictureBox6;
+        private RoundedPanel roundedPanel4;
+        private Label label4;
+        private Label label5;
+        private RoundedPanel roundedPanel5;
+        private Label label6;
+        private RoundedPanel roundedPanel6;
+        private TextBox textBox3;
+        private Label label7;
+        private Label label9;
+        private RoundedPanel roundedPanel7;
+        private Label label12;
     }
 }

@@ -11,6 +11,7 @@
 
         public const float HeaderFontSize = 14f;
         public const float InputFontSize = 12f;
+        public const float SecondaryFontSize = 10f;
         public const float TaglineFontSize = 18f;
         public const float NoticeFontSize = 8f;
         public const float LabelFontSize = 9f;

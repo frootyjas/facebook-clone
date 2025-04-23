@@ -152,8 +152,8 @@
             _panelManager = new PanelManager(
                 defaultPanel: pnlWelcomeSection,  // default panel
                 pnlWelcomeSection,
-                createAccountPanel,
-                forgotPasswordPanel,
+                pnlCreateAccount,
+                pnlForgotPassword,
                 pnlLoginSection
             );
 
@@ -225,12 +225,12 @@
         private void SetupEventHandlers()
         {
             // Panel navigation
-            lblCreateAccount.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
+            lblCreateAccount.Click += (s, e) => _panelManager.ShowPanel(pnlCreateAccount);
             lnkAlreadyHaveAnAccount_crtAcctSec.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
-            lnkForgotPassword.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
+            lnkForgotPassword.Click += (s, e) => _panelManager.ShowPanel(pnlForgotPassword);
             lblCancel_fgtSec.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
-            lnkForgotAccount.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
-            lnkSignupForFb.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
+            lnkForgotAccount.Click += (s, e) => _panelManager.ShowPanel(pnlForgotPassword);
+            lnkSignupForFb.Click += (s, e) => _panelManager.ShowPanel(pnlCreateAccount);
 
             // Input field focus handling
             SetupInputFieldFocus(txtEmailInput_lgnSec, rpEmailContainer_lgnSec, rpEmailContainer_lgnSec, rpPasswordContainer_lgnSec);
