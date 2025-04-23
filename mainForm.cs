@@ -25,6 +25,8 @@
                 StyleConstants.TransparentBlue, StyleConstants.PrimaryColor);
             ConfigureHoverEffect(lblCancel_fgtSec, rpCancelContainer_fgtSec,
                 StyleConstants.LightGray, StyleConstants.LightGray);
+            ConfigureHoverEffect(lblSignUp_crtAcctSec, rpSignUpContainer_crtAcctSec,
+             StyleConstants.DarkGreen, StyleConstants.SecondaryColor);
             ApplyFonts();
             ConfigureInputFields();
 
@@ -189,6 +191,20 @@
             // Create Account Section
             lblTagline_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
             lblCreateANewAccount.Font = FontHelper.GetFont(StyleConstants.HeaderFontSize + 4, FontStyle.Bold);
+            txtFirstNameInput_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            txtLastNameInput_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            cbbBirthday_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            cbbDay_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            cbbYear_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            lblFemale_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            lblMale_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            lblCustom_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            txtEmailInput_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            txtPasswordInput_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.InputFontSize - 1);
+            lnkAlreadyHaveAnAccount_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.LinkFontSize + 1);
+            lblSignUp_crtAcctSec.Font = FontHelper.GetFont(StyleConstants.ButtonFontSize - 1, FontStyle.Bold);
+            lblContactInfoNotice.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
+            lblSignupAgreement.Font = FontHelper.GetFont(StyleConstants.NoticeFontSize);
         }
 
         private void ConfigureInputFields()
@@ -196,13 +212,14 @@
             ConfigurePasswordField(txtPasswordInput_lgnSec);
             ConfigurePasswordField(txtPasswordInput_wlcSec);
             ConfigurePasswordField(txtPasswordInput_fgtSec);
+            ConfigurePasswordField(txtPasswordInput_crtAcctSec);
         }
 
         private void SetupEventHandlers()
         {
             // Panel navigation
             lblCreateAccount.Click += (s, e) => _panelManager.ShowPanel(createAccountPanel);
-            lnkAlreadyHaveAnAccount.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
+            lnkAlreadyHaveAnAccount_crtAcctSec.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotPassword.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
             lblCancel_fgtSec.Click += (s, e) => _panelManager.ShowPanel(pnlLoginSection);
             lnkForgotAccount.Click += (s, e) => _panelManager.ShowPanel(forgotPasswordPanel);
